@@ -76,3 +76,6 @@ Model，模型，通常来讲，我们会把模型和另一个东西放在一起
 
 将Model和View的概念拆分开来，有助于我们关注不同的方面，也可以更有效的分工。有些工程师更关注于内核也就是模型，通常来说，他们被称之为[后端工程师](https://www.zhihu.com/search?q=后端工程师&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A157049250})。有些工程师更关注于用户界面的交互和展示，通常来说，他们被称之为[前端工程师](https://www.zhihu.com/search?q=前端工程师&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A157049250})。
 
+## 分支管理
+
+![](https://chilh-1311344212.cos.ap-beijing.myqcloud.com/picture/202303191001590.png)
