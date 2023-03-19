@@ -6,7 +6,6 @@ package Model;
  * @Description: entity class of course
  */
 public class Course {
-    private Course course;
     private String courseName;
     private String courseTeacher;
     private int courseTerm;
@@ -18,25 +17,16 @@ public class Course {
     public Course() {
     }
 
-    public Course(Course course, String courseName, String courseTeacher, int courseTerm, int courseCredit, int courseScore, String courseDescribe,String courseID) {
-        this.course = course;
+    public Course(String courseID, String courseName, String courseTeacher, int courseTerm, int courseCredit, int courseScore, String courseDescribe) {
+
         this.courseName = courseName;
         this.courseTeacher = courseTeacher;
         this.courseTerm = courseTerm;
         this.courseCredit = courseCredit;
         this.courseScore = courseScore;
         this.courseDescribe = courseDescribe;
-        this.courseID=courseID
+        this.courseID=courseID;
     }
-
-    public Course getCourse() {
-        return course;
-    }
-
-    public void setCourse(Course course) {
-        this.course = course;
-    }
-
 
     public String getCourseName() {
         return courseName;

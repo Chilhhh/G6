@@ -1,0 +1,24 @@
+Student
+Name: 黄磊
+StudentID:2020213299
+Password:12345678
+Mail:huanglei@502.com
+
+Course
+Course1
+courseID:00000002
+CourseName:Introduction to Computer Science
+courseTeacher:Meiting
+courseTerm:1
+courseCredit:4
+courseScore:80
+courseDescribe: This course provides an introduction to the fundamentals of computer science, including algorithms, data structures, programming languages, and software development. 
+
+Course2
+courseID:00000001
+CourseName:Calculus I
+courseTeacher:Tang
+courseTerm:5
+courseCredit:4
+courseScore:90
+courseDescribe: This course covers the basics of calculus, including limits, derivatives, and integrals. 

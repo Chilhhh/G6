@@ -23,6 +23,9 @@ public class Student {
         this.studentEmail = studentEmail;
     }
 
+    public Student(String studentName, int studentID, String studentPassword, String studentEmail) {
+    }
+
     public int getStudentID() {
         return studentID;
     }
