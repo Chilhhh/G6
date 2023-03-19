@@ -1,0 +1,87 @@
+package Model;
+
+/**
+ * @Author: Zhouhe Zhang
+ * @Date: 2023-03-19-13:00
+ * @Description: entity class of course
+ */
+public class Course {
+    private Course course;
+    private String courseName;
+    private String courseTeacher;
+    private int courseTerm;
+    private int courseCredit;
+    private int courseScore;
+    private String courseDescribe;
+
+
+    public Course() {
+    }
+
+    public Course(Course course, String courseName, String courseTeacher, int courseTerm, int courseCredit, int courseScore, String courseDescribe) {
+        this.course = course;
+        this.courseName = courseName;
+        this.courseTeacher = courseTeacher;
+        this.courseTerm = courseTerm;
+        this.courseCredit = courseCredit;
+        this.courseScore = courseScore;
+        this.courseDescribe = courseDescribe;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public String getCourseTeacher() {
+        return courseTeacher;
+    }
+
+    public void setCourseTeacher(String courseTeacher) {
+        this.courseTeacher = courseTeacher;
+    }
+
+    public int getCourseTerm() {
+        return courseTerm;
+    }
+
+    public void setCourseTerm(int courseTerm) {
+        this.courseTerm = courseTerm;
+    }
+
+    public int getCourseCredit() {
+        return courseCredit;
+    }
+
+    public void setCourseCredit(int courseCredit) {
+        this.courseCredit = courseCredit;
+    }
+
+    public int getCourseScore() {
+        return courseScore;
+    }
+
+    public void setCourseScore(int courseScore) {
+        this.courseScore = courseScore;
+    }
+
+    public String getCourseDescribe() {
+        return courseDescribe;
+    }
+
+    public void setCourseDescribe(String courseDescribe) {
+        this.courseDescribe = courseDescribe;
+    }
+}
