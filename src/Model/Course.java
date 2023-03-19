@@ -13,12 +13,12 @@ public class Course {
     private int courseCredit;
     private int courseScore;
     private String courseDescribe;
-
+    private String courseID;
 
     public Course() {
     }
 
-    public Course(Course course, String courseName, String courseTeacher, int courseTerm, int courseCredit, int courseScore, String courseDescribe) {
+    public Course(Course course, String courseName, String courseTeacher, int courseTerm, int courseCredit, int courseScore, String courseDescribe,String courseID) {
         this.course = course;
         this.courseName = courseName;
         this.courseTeacher = courseTeacher;
@@ -26,6 +26,7 @@ public class Course {
         this.courseCredit = courseCredit;
         this.courseScore = courseScore;
         this.courseDescribe = courseDescribe;
+        this.courseID=courseID
     }
 
     public Course getCourse() {
@@ -81,6 +82,9 @@ public class Course {
         return courseDescribe;
     }
 
+    public String getCourseID() {
+        return courseID;
+    }
     public void setCourseDescribe(String courseDescribe) {
         this.courseDescribe = courseDescribe;
     }

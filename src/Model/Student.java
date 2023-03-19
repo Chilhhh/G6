@@ -1,5 +1,5 @@
 package Model;
-
+import java.util.ArrayList;
 /**
  * @Author: Zhouhe Zhang
  * @Date: 2023-03-19-12:44
@@ -8,7 +8,7 @@ package Model;
 public class Student {
     private int studentID;
     private String studentName;
-    private String studentCourse;
+    private ArrayList<Course> courses;
     private String studentPassword;
     private String studentEmail;
 
@@ -18,7 +18,7 @@ public class Student {
     public Student(int studentID, String studentName, String studentCourse, String studentPassword, String studentEmail) {
         this.studentID = studentID;
         this.studentName = studentName;
-        this.studentCourse = studentCourse;
+        this.courses = new ArrayList<Course>();
         this.studentPassword = studentPassword;
         this.studentEmail = studentEmail;
     }
@@ -39,14 +39,17 @@ public class Student {
         this.studentName = studentName;
     }
 
-    public String getStudentCourse() {
-        return studentCourse;
+    public void addCourse(Course course) {
+        this.courses.add(course);
     }
 
-    public void setStudentCourse(String studentCourse) {
-        this.studentCourse = studentCourse;
+    public void removeCourse(Course course) {
+        this.courses.remove(course);
     }
 
+    public ArrayList<Course> getCourses() {
+        return this.courses;
+    }
     public String getStudentPassword() {
         return studentPassword;
     }
