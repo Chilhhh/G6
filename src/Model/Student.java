@@ -1,12 +1,13 @@
 package Model;
 import java.util.ArrayList;
+
 /**
  * @Author: Zhouhe Zhang
  * @Date: 2023-03-19-12:44
  * @Description: entity class of student
  */
 public class Student {
-    private int studentID;
+    private String studentID;
     private String studentName;
     private ArrayList<Course> courses;
     private String studentPassword;
@@ -15,7 +16,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(int studentID, String studentName, String studentCourse, String studentPassword, String studentEmail) {
+    public Student(String studentID, String studentName, String studentCourse, String studentPassword, String studentEmail) {
         this.studentID = studentID;
         this.studentName = studentName;
         this.courses = new ArrayList<Course>();
@@ -26,11 +27,11 @@ public class Student {
     public Student(String studentName, int studentID, String studentPassword, String studentEmail) {
     }
 
-    public int getStudentID() {
+    public String getStudentID() {
         return studentID;
     }
 
-    public void setStudentID(int studentID) {
+    public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
 

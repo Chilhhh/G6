@@ -1,10 +1,6 @@
 package Model;
 
-/**
- * @Author: Zhouhe Zhang
- * @Date: 2023-03-19-13:00
- * @Description: entity class of course
- */
+
 public class Course {
     private String courseName;
     private String courseTeacher;
@@ -74,6 +70,10 @@ public class Course {
 
     public String getCourseID() {
         return courseID;
+    }
+
+    public void setCourseID(String courseID){
+        this.courseID=courseID;
     }
     public void setCourseDescribe(String courseDescribe) {
         this.courseDescribe = courseDescribe;
