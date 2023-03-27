@@ -7,6 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import java.awt.Font;
+import java.awt.Color;
 
 public class DisplayGUI extends JFrame {
 
@@ -22,7 +24,7 @@ public class DisplayGUI extends JFrame {
 
         panel = new JPanel();
         panel.setLayout(new BorderLayout());
-
+        panel.setBackground(new Color(255, 255, 204)); //设置背景颜色
         // Create student table
         String[] studentColumnNames = { "Name", "ID", "Password", "Email" };
         DefaultTableModel studentModel = new DefaultTableModel(studentColumnNames, 0);
@@ -65,6 +67,17 @@ public class DisplayGUI extends JFrame {
         JScrollPane studentAvgPane = new JScrollPane(studentAvgTable);
         panel.add(studentAvgPane, BorderLayout.SOUTH);
 
+
+        // Make GUI more beautiful and rich
+        studentTable.setRowHeight(30);
+        courseTable.setRowHeight(30);
+        studentTable.getTableHeader().setFont(new Font("Arial", Font.BOLD, 16));
+        courseTable.getTableHeader().setFont(new Font("Arial", Font.BOLD, 16));
+        studentTable.setFont(new Font("Arial", Font.PLAIN, 16));
+        courseTable.setFont(new Font("Arial", Font.PLAIN, 16));
+        studentAvgTable.getTableHeader().setFont(new Font("Arial", Font.BOLD, 16));
+        studentAvgTable.setFont(new Font("Arial", Font.PLAIN, 16));
+        studentAvgTable.setRowHeight(30);
     }
 
 
