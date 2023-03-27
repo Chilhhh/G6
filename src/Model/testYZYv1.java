@@ -4,10 +4,17 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
+<<<<<<< Updated upstream
 
 public class testYZYv1 {
 
     public static void main(String[] args) {
+=======
+import Model.pdfProducer;
+public class testYZYv1 {
+
+    public static void main(String[] args) throws Exception {
+>>>>>>> Stashed changes
         ArrayList<Student> students = new ArrayList<>();
         ArrayList<Course> courses = new ArrayList<>();
 
@@ -109,5 +116,12 @@ public class testYZYv1 {
             System.out.println("Course Description: " + course.getCourseDescribe());
             System.out.println();
         }
+<<<<<<< Updated upstream
     }
+=======
+            pdfProducer.pdfProducer(courses);
+    
+    }
+
+>>>>>>> Stashed changes
 }
