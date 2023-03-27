@@ -9,17 +9,18 @@ import java.util.ArrayList;
 public class Student {
     private String studentID;
     private String studentName;
-    private ArrayList<Course> courses;
+    private ArrayList<Course> Stucourses;
     private String studentPassword;
     private String studentEmail;
 
     public Student() {
+        this.Stucourses = new ArrayList<>();
     }
 
     public Student(String studentID, String studentName, String studentCourse, String studentPassword, String studentEmail) {
         this.studentID = studentID;
         this.studentName = studentName;
-        this.courses = new ArrayList<Course>();
+        this.Stucourses = new ArrayList<>();
         this.studentPassword = studentPassword;
         this.studentEmail = studentEmail;
     }
@@ -43,17 +44,18 @@ public class Student {
         this.studentName = studentName;
     }
 
-    public void addCourse(Course course) {
-        this.courses.add(course);
+    public void addStudentCourse(Course course) {
+        this.Stucourses.add(course);
     }
 
-    public void removeCourse(Course course) {
-        this.courses.remove(course);
+    public void removeStudentCourse(Course course) {
+        this.Stucourses.remove(course);
     }
 
-    public ArrayList<Course> getCourses() {
-        return this.courses;
+    public ArrayList<Course> getStudentCourses() {
+        return this.Stucourses;
     }
+
     public String getStudentPassword() {
         return studentPassword;
     }
@@ -68,5 +70,23 @@ public class Student {
 
     public void setStudentEmail(String studentEmail) {
         this.studentEmail = studentEmail;
+    }
+
+    public double calculateAverageScore() {
+        double totalScore = 0;
+        int totalCredit = 0;
+        for (Course course : Stucourses) {
+            totalScore += course.getCourseScore() * course.getCourseCredit();
+            totalCredit += course.getCourseCredit();
+        }
+        return totalScore / totalCredit;
+    }
+
+    public double calculateTotalCredit() {
+        int totalCredit = 0;
+        for (Course course : Stucourses) {
+            totalCredit += course.getCourseCredit();
+        }
+        return totalCredit;
     }
 }
