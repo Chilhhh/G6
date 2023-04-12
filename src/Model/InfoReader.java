@@ -5,14 +5,19 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class testYZYv1 {
 
-    public static void main(String[] args) {
-        ArrayList<Student> students = new ArrayList<>();
-        ArrayList<Course> courses = new ArrayList<>();
+public class InfoReader {
 
+    private ArrayList<Student> students;
+    private ArrayList<Course> courses;
+
+    public InfoReader() {
+        students = new ArrayList<>();
+        courses = new ArrayList<>();
+    }
+    public void readit(String fileName){
         try {
-            File file = new File("info.txt");
+            File file = new File(fileName);
             Scanner scanner = new Scanner(file);
 
             String line;
@@ -77,6 +82,7 @@ public class testYZYv1 {
                         case "courseDescribe":
                             course.setCourseDescribe(parts[1].trim());
                             courses.add(course);
+                            student.addStudentCourse(course);
                             break;
                         default:
                             break;
@@ -96,6 +102,7 @@ public class testYZYv1 {
             System.out.println("Student ID: " + student.getStudentID());
             System.out.println("Student Password: " + student.getStudentPassword());
             System.out.println("Student Email: " + student.getStudentEmail());
+            System.out.println("Student Courses: "+ student.getStudentCourses());
             System.out.println();
         }
 
@@ -109,5 +116,19 @@ public class testYZYv1 {
             System.out.println("Course Description: " + course.getCourseDescribe());
             System.out.println();
         }
+        DisplayGUI gui = new DisplayGUI(students, courses);
     }
+
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public ArrayList<Course> getCourses() {
+        return courses;
+    }
+
+
+
+
+
 }
