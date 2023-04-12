@@ -1,37 +1,27 @@
 package Model;
 
 import java.awt.BorderLayout;
-import java.io.File;
 import java.util.ArrayList;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.Font;
-import java.awt.Color;
+import java.awt.*;
+
 
 public class testYZYtem extends JFrame {
 
     private static final long serialVersionUID = 1L;
     private JPanel panel;
     private JTable studentTable, courseTable,studentAvgTable;
-
+    JLayeredPane layeredPane = new JLayeredPane();
     public testYZYtem(ArrayList<Student> students, ArrayList<Course> courses) {
         setTitle("Student and Course Information");
         setSize(800, 600);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        ImageIcon icon1=new ImageIcon("src/Model/background.jpg" );
-
-
-        JLabel backgroundLabel = new JLabel(icon1);
-        // Set the layout of the label to BorderLayout
-        backgroundLabel.setBounds(0,0,icon1.getIconWidth(),icon1.getIconHeight());
-        backgroundLabel.setLayout(new BorderLayout());
-
         panel = new JPanel();
         panel.setLayout(new BorderLayout());
-        //panel.setBackground(new Color(25, 205, 204)); //设置背景颜色
+        panel.setBackground(new Color(255, 255, 204)); //设置背景颜色
         // Create student table
         String[] studentColumnNames = { "Name", "ID", "Password", "Email" };
         DefaultTableModel studentModel = new DefaultTableModel(studentColumnNames, 0);
@@ -57,12 +47,7 @@ public class testYZYtem extends JFrame {
         JScrollPane courseScrollPane = new JScrollPane(courseTable);
         panel.add(courseScrollPane, BorderLayout.CENTER);
 
-
-        panelTop.setOpaque(false);
-        panel.setOpaque(false);
-        backgroundLabel.add(panel);
-        add(backgroundLabel);
-        setContentPane(backgroundLabel);
+        add(panel);
         setVisible(true);
 
 
@@ -91,6 +76,7 @@ public class testYZYtem extends JFrame {
         studentAvgTable.setFont(new Font("Arial", Font.PLAIN, 16));
         studentAvgTable.setRowHeight(30);
     }
+
 
 
 
