@@ -3,11 +3,10 @@ package Model;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Scanner;;
 
 public class testYZYv1 {
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         ArrayList<Student> students = new ArrayList<>();
         ArrayList<Course> courses = new ArrayList<>();
 
@@ -27,8 +26,7 @@ public class testYZYv1 {
                     student = new Student();
                     isStudent = true;
                     isCourse = false;
-                }
-                else if (line.equals("Course")) {
+                } else if (line.equals("Course")) {
                     course = new Course();
                     isCourse = true;
                     isStudent = false;
@@ -52,8 +50,7 @@ public class testYZYv1 {
                         default:
                             break;
                     }
-                }
-                else if (isCourse) {
+                } else if (isCourse) {
                     String[] parts = line.split(":");
                     switch (parts[0].trim()) {
                         case "courseID":
@@ -109,5 +106,8 @@ public class testYZYv1 {
             System.out.println("Course Description: " + course.getCourseDescribe());
             System.out.println();
         }
+
+        pdfProducer.pdfProducer(courses, students);
     }
+
 }
