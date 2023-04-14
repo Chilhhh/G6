@@ -89,7 +89,7 @@ public class testPdf_v1 {
         }
 
     
-        pdfProducer_v1.pdfProducer(courses, students);
+        pdfProducer_v.pdfProducer(courses, students);
     }
 
 }

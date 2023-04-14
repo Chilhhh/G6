@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
@@ -21,8 +22,10 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import Model.Course;
+import Model.Student;
 
-public class App {
+public class pdfProducer_v {
 	private static final String splitVline = "    |    ";
 	private static final String TAB = "    ";
 
@@ -460,132 +463,146 @@ public class App {
 		doc.add(blankRow(5));
 	}
 
-	public static void main(String[] args) {
-		try {
-			// 创建文档
-			Document document = new Document(PageSize.A4, 5, 5, 36, 36);
-			// 设置文档保存路径
-			PdfWriter.getInstance(document, new FileOutputStream("demo.pdf"));
-			document.open();
-			Paragraph title = new Paragraph(18f, "个人简历", myfont(22, Font.BOLD));
-			title.setAlignment(Element.ALIGN_CENTER);
-			document.add(title);
-			document.add(blankRow(30));
-			// 基本信息
-			PdfPTable tbBaseInfo = new PdfPTable(2);
-			PdfPCell cell11 = new PdfPCell(new Paragraph("林黛玉", myfont(18, Font.NORMAL)));
-			cell11.setBorder(0);
-			// cell11.setPaddingTop(5);
-			cell11.setPaddingBottom(10);
-			cell11.setPaddingLeft(15);
-			// 头像
-			String headImgPath = "/home/hcert.jpeg";
-			Image headImg = Image.getInstance(headImgPath);
-			// 设置每列宽度比例
-			int width11[] = { 15, 85 };
-			tbBaseInfo.setWidths(width11);
-			tbBaseInfo.getDefaultCell().setBorder(0);
-			PdfPCell cellHimg = new PdfPCell();
-			cellHimg.setBorder(0);
-			cellHimg.setImage(headImg);
-			cellHimg.setColspan(1);// 合并单元格
-			cellHimg.setRowspan(3);
-			tbBaseInfo.addCell(cellHimg);
-			tbBaseInfo.addCell(cell11);
-			PdfPCell cell12 = new PdfPCell(
-					new Paragraph("女" + splitVline + "18岁" + splitVline + " 大观园潇湘馆" + splitVline + "6年 工 作经验", myfont(
-							12, Font.NORMAL)));
-			cell12.setPaddingBottom(5);
-			cell12.setPaddingLeft(15);
-			cell12.setBorder(0);
-			tbBaseInfo.addCell(cell12);
-			PdfPCell cell13 = new PdfPCell(
-					new Paragraph("15700000000" + splitVline + "lindaiyu@exapme.com", myfont(12, Font.NORMAL)));
-			cell13.setBorder(0);
-			cell13.setPaddingLeft(15);
-			tbBaseInfo.addCell(cell13);
-			document.add(tbBaseInfo);
-			// 加入空行
-			document.add(blankRow(30));
+	public static void pdfProducer(ArrayList<Course> courses, ArrayList<Student> students) throws Exception {
 
-			document.add(add_headtitle_1("求职意向"));
-			// 加入空行
-			document.add(blankRow(5));
-			// 求职意向主体
-			PdfPTable careerTable = new PdfPTable(4);
-			// 配置单元格跨页显示
-			careerTable.setSplitLate(false);
-			careerTable.setSplitRows(true);
+		for (Student student : students) {
+			try {
+				// 创建文档
+				Document document = new Document(PageSize.A4, 5, 5, 36, 36);
+				// 设置文档保存路径
+				PdfWriter.getInstance(document, new FileOutputStream("demo5.pdf"));
+				document.open();
+				Paragraph title = new Paragraph(18f, "个人简历", myfont(22, Font.BOLD));
+				title.setAlignment(Element.ALIGN_CENTER);
+				document.add(title);
+				document.add(blankRow(30));
 
-			int careerTableWidth[] = { 15, 35, 15, 35 };
-			careerTable.setWidths(careerTableWidth);
-			careerTable.addCell(add_cell("求职状态：", "#878787", 10));
-			careerTable.addCell(add_cell("在职考虑换工作", 10));
-			careerTable.addCell(add_cell("工作地点：", "#878787", 10));
-			careerTable.addCell(add_cell("中国-义龙新区", 10));
+				
+				String name = student.getStudentName();
+				String email = student.getStudentEmail();
+				
 
-			careerTable.addCell(add_cell("期望行业：", "#878787", 10));
-			careerTable.addCell(add_cell("事业单位/计算机", 10));
-			careerTable.addCell(add_cell("期望职业：", "#878787", 10));
-			careerTable.addCell(add_cell("项目经理/运维开发/信息安全工程师/系统架构师", 10));
+				/*for (Course course : courses) {
+					table.addCell(new Cell().add(new Paragraph(course.getCourseName())));
+					String score = String.valueOf(course.getCourseScore());
+					table.addCell(new Cell().add(new Paragraph(score)));
+				}*/
 
-			careerTable.addCell(add_cell("期望薪资：", "#878787", 10));
-			careerTable.addCell(add_cell("10k~15k", 10));
-			careerTable.addCell(add_cell("工作性质：", "#878787", 10));
-			careerTable.addCell(add_cell("全职", 10));
-			document.add(careerTable);
-			// 加入空行
-			document.add(blankRow());
+				// 基本信息
+				PdfPTable tbBaseInfo = new PdfPTable(2);
+				PdfPCell cell11 = new PdfPCell(new Paragraph(name, myfont(18, Font.NORMAL)));
+				cell11.setBorder(0);
+				cell11.setPaddingTop(5);
+				cell11.setPaddingBottom(10);
+				cell11.setPaddingLeft(15);
 
-			// 工作经验
-			document.add(add_headtitle_1("工作经验"));
-			document.add(blankRow(5));
-			// 工作经验 主体 Begin
-			add_workExpTable(document);
-			add_workExpTable(document);
-			// 工作经验 主体 END
+				// 设置每列宽度比例
+				int width11[] = { 85 , 15 };
+				tbBaseInfo.setWidths(width11);
+				tbBaseInfo.getDefaultCell().setBorder(0);
+				tbBaseInfo.addCell(cell11);
+				// 占位单元格
+				PdfPCell cellpadding = new PdfPCell();
+				cellpadding.setBorder(0);
+				cellpadding.setColspan(1);// 合并单元格
+				cellpadding.setRowspan(3);
+				tbBaseInfo.addCell(cellpadding);
+				
+				PdfPCell cell12 = new PdfPCell(
+						new Paragraph("女" + splitVline + "18岁" + splitVline + " 大观园潇湘馆" + splitVline + "6年工作经验", myfont(
+								12, Font.NORMAL)));
+				cell12.setPaddingBottom(5);
+				cell12.setPaddingLeft(15);
+				cell12.setBorder(0);
+				tbBaseInfo.addCell(cell12);
+				PdfPCell cell13 = new PdfPCell(
+						new Paragraph("15700000000" + splitVline + email, myfont(12, Font.NORMAL)));
+				cell13.setBorder(0);
+				cell13.setPaddingLeft(15);
+				tbBaseInfo.addCell(cell13);
+				document.add(tbBaseInfo);
+				// 加入空行
+				document.add(blankRow(30));
 
-			document.add(blankRow());
+				document.add(add_headtitle_1("求职意向"));
+				// 加入空行
+				document.add(blankRow(5));
+				// 求职意向主体
+				PdfPTable careerTable = new PdfPTable(4);
+				// 配置单元格跨页显示
+				careerTable.setSplitLate(false);
+				careerTable.setSplitRows(true);
 
-			// 项目经验
-			document.add(add_headtitle_1("项目经验"));
-			document.add(blankRow(5));
-			add_projectExpTable(document);
+				int careerTableWidth[] = { 15, 35, 15, 35 };
+				careerTable.setWidths(careerTableWidth);
+				careerTable.addCell(add_cell("求职状态：", "#878787", 10));
+				careerTable.addCell(add_cell("在职考虑换工作", 10));
+				careerTable.addCell(add_cell("工作地点：", "#878787", 10));
+				careerTable.addCell(add_cell("中国-义龙新区", 10));
 
-			document.add(blankRow());
-			// 教育经历
-			document.add(add_headtitle_1("教育经历"));
-			document.add(blankRow(5));
-			add_eduExpTable(document);
+				careerTable.addCell(add_cell("期望行业：", "#878787", 10));
+				careerTable.addCell(add_cell("事业单位/计算机", 10));
+				careerTable.addCell(add_cell("期望职业：", "#878787", 10));
+				careerTable.addCell(add_cell("项目经理/运维开发/信息安全工程师/系统架构师", 10));
 
-			document.add(blankRow());
-			// 培训经历
-			document.add(add_headtitle_1("培训经历"));
-			document.add(blankRow(5));
-			add_trainExpTable(document);
+				careerTable.addCell(add_cell("期望薪资：", "#878787", 10));
+				careerTable.addCell(add_cell("10k~15k", 10));
+				careerTable.addCell(add_cell("工作性质：", "#878787", 10));
+				careerTable.addCell(add_cell("全职", 10));
+				document.add(careerTable);
+				// 加入空行
+				document.add(blankRow());
 
-			document.add(blankRow());
-			// 专业技能
-			document.add(add_headtitle_1("专业技能"));
-			document.add(blankRow(5));
-			add_majorSkillExpTable(document);
+				// 工作经验
+				document.add(add_headtitle_1("工作经验"));
+				document.add(blankRow(5));
+				// 工作经验 主体 Begin
+				add_workExpTable(document);
+				add_workExpTable(document);
+				// 工作经验 主体 END
 
-			document.add(blankRow());
-			// 语言能力
-			document.add(add_headtitle_1("语言能力"));
-			document.add(blankRow(5));
-			add_langSkillExpTable(document);
+				document.add(blankRow());
 
-			document.add(blankRow());
-			// 资格证书
-			document.add(add_headtitle_1("资格证书 "));
-			document.add(blankRow(5));
-			add_certExpTable(document);
+				// 项目经验
+				document.add(add_headtitle_1("项目经验"));
+				document.add(blankRow(5));
+				add_projectExpTable(document);
 
-			document.close();
-			System.out.println("创建成功");
-		} catch (Exception ex) {
-			ex.printStackTrace();
+				document.add(blankRow());
+				// 教育经历
+				document.add(add_headtitle_1("教育经历"));
+				document.add(blankRow(5));
+				add_eduExpTable(document);
+
+				document.add(blankRow());
+				// 培训经历
+				document.add(add_headtitle_1("培训经历"));
+				document.add(blankRow(5));
+				add_trainExpTable(document);
+
+				document.add(blankRow());
+				// 专业技能
+				document.add(add_headtitle_1("专业技能"));
+				document.add(blankRow(5));
+				add_majorSkillExpTable(document);
+
+				document.add(blankRow());
+				// 语言能力
+				document.add(add_headtitle_1("语言能力"));
+				document.add(blankRow(5));
+				add_langSkillExpTable(document);
+
+				document.add(blankRow());
+				// 资格证书
+				document.add(add_headtitle_1("资格证书 "));
+				document.add(blankRow(5));
+				add_certExpTable(document);
+
+				document.close();
+				System.out.println("创建成功");
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
 		}
 	}
 }
