@@ -3,10 +3,11 @@ package Model;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Scanner;;
+import java.util.Scanner;
+
 
 public class testYZYv1 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         ArrayList<Student> students = new ArrayList<>();
         ArrayList<Course> courses = new ArrayList<>();
 
@@ -106,8 +107,6 @@ public class testYZYv1 {
             System.out.println("Course Description: " + course.getCourseDescribe());
             System.out.println();
         }
-
-        pdfProducer.pdfProducer(courses, students);
     }
 
 }
