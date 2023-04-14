@@ -21,3 +21,27 @@ courseTerm:5
 courseCredit:4
 courseScore:90
 courseDescribe: This course covers the basics of calculus, including limits, derivatives, and integrals. 
+Course
+courseID:00000003
+CourseName:Calculus II
+courseTeacher:Tang
+courseTerm:5
+courseCredit:4
+courseScore:90
+courseDescribe: This course covers the basics of calculus, including limits, derivatives, and integrals.
+Course
+courseID:00000004
+CourseName:DSP
+courseTeacher:Tang
+courseTerm:5
+courseCredit:90
+courseScore:60
+courseDescribe: This course covers the basics of calculus, including limits, derivatives, and integrals.
+Course
+courseID:00000006
+CourseName:AND
+courseTeacher:Tang
+courseTerm:5
+courseCredit:20
+courseScore:50
+courseDescribe: This course covers the basics of calculus, including limits, derivatives, and integrals.
