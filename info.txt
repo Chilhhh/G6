@@ -4,6 +4,8 @@ Name:ZhouheZhang
 StudentID:2020213299
 Password:12345678
 Mail:huanglei@502.com
+Gender:Female
+Age:20
 
 Course
 courseID:00000002

@@ -126,8 +126,8 @@ public class InfoReader {
             System.out.println("Course Description: " + course.getCourseDescribe());
             System.out.println();
         }
-        testYZYtem gui = new testYZYtem(students, courses);
-        //DisplayGUI gui = new DisplayGUI(students, courses);
+        //testYZYtem gui = new testYZYtem(students, courses);
+        DisplayGUI gui = new DisplayGUI(students, courses);
     }
 
     public ArrayList<Student> getStudents() {
