@@ -5,7 +5,11 @@ import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-
+/**
+ * @Author: Zongyou Yang
+ * @Date: 2023-03-28-12:44
+ * @Description: entity class of student
+ */
 
 public class DisplayGUI extends JFrame {
 

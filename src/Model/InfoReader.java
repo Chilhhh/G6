@@ -4,8 +4,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
+/**
+ * @Author: Zongyou Yang
+ * @Date: 2023-03-28-12:44
+ * @Description: entity class of student
+ */
 public class InfoReader {
 
     private ArrayList<Student> students;
@@ -15,93 +20,97 @@ public class InfoReader {
         students = new ArrayList<>();
         courses = new ArrayList<>();
     }
-    public void readit(String fileName){
-        try {
-            File file = new File(fileName);
-            Scanner scanner = new Scanner(file);
 
-            String line;
-            Student student = null;
-            Course course = null;
-            boolean isStudent = false;
-            boolean isCourse = false;
-
-            while (scanner.hasNextLine()) {
-                line = scanner.nextLine();
-                if (line.equals("Student")) {
-                    student = new Student();
-                    isStudent = true;
-                    isCourse = false;
-                }
-                else if (line.equals("Course")) {
-                    course = new Course();
-                    isCourse = true;
-                    isStudent = false;
-                }
-                if (isStudent) {
-                    String[] parts = line.split(":");
-                    switch (parts[0].trim()) {
-                        case "Name":
-                            student.setStudentName(parts[1].trim());
-                            break;
-                        case "StudentID":
-                            student.setStudentID(parts[1].trim());
-                            break;
-                        case "Password":
-                            student.setStudentPassword(parts[1].trim());
-                            break;
-                        case "Mail":
-                            student.setStudentEmail(parts[1].trim());
-
-                            break;
-                        case "Gender":
-                            student.setStudentGender(parts[1].trim());
-
-                            break;
-                        case "Age":
-                            student.setStudentAge(parts[1].trim());
-                            students.add(student);
-                            break;
-                        default:
-                            break;
+    public void readit() {
+        JFileChooser chooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Text Files", "txt");
+        chooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
+        chooser.setDialogTitle("Open Folder");
+        //chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        chooser.setFileFilter(filter);
+        int returnVal = chooser.showOpenDialog(null);
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            File file = chooser.getSelectedFile();
+            try {
+                Scanner scanner = new Scanner(file);
+                String line;
+                Student student = null;
+                Course course = null;
+                boolean isStudent = false;
+                boolean isCourse = false;
+                while (scanner.hasNextLine()) {
+                    line = scanner.nextLine();
+                    if (line.equals("Student")) {
+                        student = new Student();
+                        isStudent = true;
+                        isCourse = false;
+                    } else if (line.equals("Course")) {
+                        course = new Course();
+                        isCourse = true;
+                        isStudent = false;
+                    }
+                    if (isStudent) {
+                        String[] parts = line.split(":");
+                        switch (parts[0].trim()) {
+                            case "Name":
+                                student.setStudentName(parts[1].trim());
+                                break;
+                            case "StudentID":
+                                student.setStudentID(parts[1].trim());
+                                break;
+                            case "Password":
+                                student.setStudentPassword(parts[1].trim());
+                                break;
+                            case "Mail":
+                                student.setStudentEmail(parts[1].trim());
+                                break;
+                            case "Gender":
+                                student.setStudentGender(parts[1].trim());
+                                break;
+                            case "Age":
+                                student.setStudentAge(parts[1].trim());
+                                students.add(student);
+                                break;
+                            default:
+                                break;
+                        }
+                    } else if (isCourse) {
+                        String[] parts = line.split(":");
+                        switch (parts[0].trim()) {
+                            case "courseID":
+                                course.setCourseID(parts[1].trim());
+                                break;
+                            case "CourseName":
+                                course.setCourseName(parts[1].trim());
+                                break;
+                            case "courseTeacher":
+                                course.setCourseTeacher(parts[1].trim());
+                                break;
+                            case "courseTerm":
+                                course.setCourseTerm(Integer.parseInt(parts[1].trim()));
+                                break;
+                            case "courseCredit":
+                                course.setCourseCredit(Integer.parseInt(parts[1].trim()));
+                                break;
+                            case "courseScore":
+                                course.setCourseScore(Integer.parseInt(parts[1].trim()));
+                                break;
+                            case "courseDescribe":
+                                course.setCourseDescribe(parts[1].trim());
+                                courses.add(course);
+                                student.addStudentCourse(course);
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 }
-                else if (isCourse) {
-                    String[] parts = line.split(":");
-                    switch (parts[0].trim()) {
-                        case "courseID":
-                            course.setCourseID(parts[1].trim());
-                            break;
-                        case "CourseName":
-                            course.setCourseName(parts[1].trim());
-                            break;
-                        case "courseTeacher":
-                            course.setCourseTeacher(parts[1].trim());
-                            break;
-                        case "courseTerm":
-                            course.setCourseTerm(Integer.parseInt(parts[1].trim()));
-                            break;
-                        case "courseCredit":
-                            course.setCourseCredit(Integer.parseInt(parts[1].trim()));
-                            break;
-                        case "courseScore":
-                            course.setCourseScore(Integer.parseInt(parts[1].trim()));
-                            break;
-                        case "courseDescribe":
-                            course.setCourseDescribe(parts[1].trim());
-                            courses.add(course);
-                            student.addStudentCourse(course);
-                            break;
-                        default:
-                            break;
-                    }
-                }
+                scanner.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
             }
-
-            scanner.close();
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        } else {
+            System.out.println("Open command cancelled by user.");
         }
 
         // Print the loaded students and courses

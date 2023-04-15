@@ -1,9 +1,15 @@
 package Model;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import javax.imageio.ImageIO;
+import java.awt.*;
 /**
- * @Author: Zhouhe Zhang
- * @Date: 2023-03-19-12:44
+ * @Author: Zongyou Yang
+ * @Date: 2023-03-28-12:44
  * @Description: entity class of student
  */
 public class Student {
@@ -12,9 +18,11 @@ public class Student {
     private ArrayList<Course> Stucourses;
     private String studentPassword;
     private String studentEmail;
-
+    private BufferedImage studentImage = setDefaultImage();
     private String studentGender;
-
+    private String studentPhone;
+    private String studentCompetition;
+    private String studentActiviy;
     private String studentAge;
     public Student() {
         this.Stucourses = new ArrayList<>();
@@ -91,6 +99,38 @@ public class Student {
         this.studentAge = studentAge;
     }
 
+    public String getStudentPhone() {
+        return studentPhone;
+    }
+
+    public void setStudentPhone(String studentPhone) {
+        this.studentPhone = studentPhone;
+    }
+
+    public String getStudentCompetition() {
+        return studentCompetition;
+    }
+
+    public void setStudentCompetition(String studentCompetition) {
+        this.studentCompetition = studentCompetition;
+    }
+
+    public String getStudentActiviy() {
+        return studentActiviy;
+    }
+
+    public void setStudentActiviy(String studentActiviy) {
+        this.studentActiviy = studentActiviy;
+    }
+
+    public BufferedImage getStudentImage() {
+        return studentImage;
+    }
+
+    public void setStudentImage(BufferedImage studentImage) {
+        this.studentImage = studentImage;
+    }
+
     public double calculateAverageScore() {
         double totalScore = 0;
         int totalCredit = 0;
@@ -107,5 +147,24 @@ public class Student {
             totalCredit += course.getCourseCredit();
         }
         return totalCredit;
+    }
+
+    private BufferedImage setDefaultImage() {
+        BufferedImage image = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        Graphics g = image.getGraphics();
+        g.setColor(Color.GRAY);
+        g.fillRect(0, 0, 100, 100);
+        g.dispose();
+        return image;
+    }
+    public File saveImagetoFile(){
+        BufferedImage image = getStudentImage();
+        File file = new File("output.png");
+        try {
+            ImageIO.write(image, "png", file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return file;
     }
 }

@@ -13,6 +13,11 @@ import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JTextPane;
 
+/**
+ * @Author: Zongyou Yang
+ * @Date: 2023-03-28-12:44
+ * @Description: entity class of student
+ */
 public class testYZYtem2 extends JFrame  {
 
     public static void main(String[] args) {

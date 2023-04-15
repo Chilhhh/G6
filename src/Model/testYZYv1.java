@@ -4,7 +4,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/**
+ * @Author: Zongyou Yang
+ * @Date: 2023-03-28-12:44
+ * @Description: entity class of student
+ */
 public class testYZYv1 {
 
     public static void main(String[] args) {

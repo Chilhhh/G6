@@ -7,6 +7,11 @@ import java.util.Scanner;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+/**
+ * @Author: Zongyou Yang
+ * @Date: 2023-03-28-12:44
+ * @Description: entity class of student
+ */
 public class InfoReadertem {
 
     private ArrayList<Student> students;
