@@ -64,7 +64,9 @@ public class testYZYtem extends JFrame {
         JScrollPane studentAvgPane = new JScrollPane(studentAvgTable);
         panel.add(studentAvgPane, BorderLayout.SOUTH);
 
-
+        studentTable.setAutoCreateRowSorter(true);
+        courseTable.setAutoCreateRowSorter(true);
+        studentAvgTable.setAutoCreateRowSorter(true);
         // Make GUI more beautiful and rich
         studentTable.setRowHeight(30);
         courseTable.setRowHeight(30);

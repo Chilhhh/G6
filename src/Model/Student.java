@@ -13,6 +13,9 @@ public class Student {
     private String studentPassword;
     private String studentEmail;
 
+    private String studentGender;
+
+    private String studentAge;
     public Student() {
         this.Stucourses = new ArrayList<>();
     }
@@ -70,6 +73,22 @@ public class Student {
 
     public void setStudentEmail(String studentEmail) {
         this.studentEmail = studentEmail;
+    }
+
+    public String getStudentGender() {
+        return studentGender;
+    }
+
+    public void setStudentGender(String studentGender) {
+        this.studentGender = studentGender;
+    }
+
+    public String getStudentAge() {
+        return studentAge;
+    }
+
+    public void setStudentAge(String studentAge) {
+        this.studentAge = studentAge;
     }
 
     public double calculateAverageScore() {

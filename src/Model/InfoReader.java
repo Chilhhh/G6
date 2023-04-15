@@ -52,6 +52,14 @@ public class InfoReader {
                             break;
                         case "Mail":
                             student.setStudentEmail(parts[1].trim());
+
+                            break;
+                        case "Gender":
+                            student.setStudentGender(parts[1].trim());
+
+                            break;
+                        case "Age":
+                            student.setStudentAge(parts[1].trim());
                             students.add(student);
                             break;
                         default:
@@ -103,6 +111,8 @@ public class InfoReader {
             System.out.println("Student Password: " + student.getStudentPassword());
             System.out.println("Student Email: " + student.getStudentEmail());
             System.out.println("Student Courses: "+ student.getStudentCourses());
+            System.out.println("Student Gender: "+ student.getStudentGender());
+            System.out.println("Student Age: "+ student.getStudentAge());
             System.out.println();
         }
 

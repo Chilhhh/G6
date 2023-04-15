@@ -10,7 +10,7 @@ public class testYZYv2 {
         System.out.println(infoReader.getStudents());
         System.out.println(infoReader.getCourses());
         System.out.println();
-        TimeLineDisplay timeLineDisplay = new TimeLineDisplay(infoReader);
+        //TimeLineDisplay timeLineDisplay = new TimeLineDisplay(infoReader);
     }
 
 
