@@ -43,7 +43,8 @@
         "libs/junit-4.11.jar",
         "libs/kernel-7.1.9.jar",
         "libs/layout-7.1.9.jar",
-        "libs/slf4j-api-1.7.13.jar"
+        "libs/slf4j-api-1.7.13.jar",
+        "libs/icepdf-viewer-4.3.3.jar"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

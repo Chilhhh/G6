@@ -87,9 +87,7 @@ public class testPdf_v1 {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-    
-        pdfProducer_v.pdfProducer(courses, students);
+        pdfGUI.pdfGUI(students);
     }
 
 }

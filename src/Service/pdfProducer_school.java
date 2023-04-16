@@ -25,7 +25,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 import Model.Course;
 import Model.Student;
 
-public class pdfProducer_v {
+public class pdfProducer_school {
 	private static final String splitVline = "    |    ";
 	private static final String TAB = "    ";
 
@@ -215,41 +215,23 @@ public class pdfProducer_v {
 	 * @param doc Document对象
 	 * @throws Exception
 	 */
-	private static void add_workExpTable(Document doc) throws Exception {
-		PdfPTable workExpTable = new PdfPTable(1);
+	private static void add_grades_all(Document doc,ArrayList<Course> courses) throws Exception {
+		PdfPTable workExpTable = new PdfPTable(2);
 		// 实现单元格跨页显示
 		workExpTable.setSplitLate(false);
 		workExpTable.setSplitRows(true);
-		int workExpTableWidth[] = { 100 };
+		int workExpTableWidth[] = { 40 , 60 };
 		workExpTable.setWidths(workExpTableWidth);
 		workExpTable.getDefaultCell().setBorder(0);
-		TBCell tbcs1 = TBCell.NEW().bgcolor("#eee").lead(5).borderColor("#eee").fontStyle(Font.BOLD);
-		TBCell tbcs2 = TBCell.NEW().bgcolor("#eee").lead(10).borderColor("#eee").colspan(2).rowspan(1)
-				.fontStyle(Font.BOLD);
-		TBCell tbcs3 = TBCell.NEW().bgcolor("#eee").lead(10).borderColor("#eee").colspan(2).rowspan(1);
-		TBCell tbcs4 = TBCell.NEW().bgcolor("#eee").lead(10).borderColor("#eee").colspan(2).rowspan(1).indent(20);
-		TBCell tbcs5 = TBCell.NEW().bgcolor("#eee").lead(1).borderColor("#eee").colspan(2).rowspan(1);
-		workExpTable.addCell(add_cell("贵州大数据发展集团", tbcs1));
-		StringBuffer sbf = new StringBuffer();
-		sbf.append("2019年10月-2020年10月");
-		sbf.append(splitVline);
-		sbf.append("项目经理");
-		sbf.append(splitVline);
-		sbf.append("10k~15k");
-		sbf.append(splitVline);
-		sbf.append("互联网产品经理");
-		sbf.append(splitVline);
-		sbf.append("计算机科学与技术");
-		workExpTable.addCell(add_cell(sbf.toString(), tbcs4));
-		workExpTable.addCell(add_cell("工作描述：", tbcs2));
-		StringBuffer sbd = new StringBuffer();
-		sbd.append("在公司参与营销中心财务系统的设计与开发。\n" +
-				"系统基于spring cloud的微服务平台，前端是使用vue框架，后台使用spring cloud与Mybatis，前后台使用json数据交换。还使用了mysql分布式数据库，Oracle数据库以及redis集群，\n"
-				+
+		for (Course course : courses) {
+			
+			TBCell tbcs1 = TBCell.NEW().bgcolor("#eee").lead(5).borderColor("#eee").fontStyle(Font.BOLD);
+			TBCell tbcs2 = TBCell.NEW().bgcolor("#eee").lead(10).borderColor("#eee").colspan(2).rowspan(1);
+			workExpTable.addCell(add_cell(course.getCourseName(), tbcs1));
+			workExpTable.addCell(add_cell(splitVline+String.valueOf(course.getCourseScore()), tbcs2));
 
-				"系统使用docker容器部署。使用git代码管理，maven构建系统，devops自动化部署");
-		workExpTable.addCell(add_cell(sbd.toString(), tbcs4));
-		workExpTable.addCell(add_cell_speace(tbcs5));
+		}
+		
 		doc.add(workExpTable);
 		doc.add(blankRow(5));
 	}
@@ -463,54 +445,54 @@ public class pdfProducer_v {
 		doc.add(blankRow(5));
 	}
 
-	public static void pdfProducer(ArrayList<Course> courses, ArrayList<Student> students) throws Exception {
+	public static void pdfProducer(ArrayList<Student> students) throws Exception {
 
 		for (Student student : students) {
 			try {
 				// 创建文档
 				Document document = new Document(PageSize.A4, 5, 5, 36, 36);
 				// 设置文档保存路径
-				PdfWriter.getInstance(document, new FileOutputStream("demo5.pdf"));
+				PdfWriter.getInstance(document, new FileOutputStream("demo1.pdf"));
 				document.open();
 				Paragraph title = new Paragraph(18f, "个人简历", myfont(22, Font.BOLD));
 				title.setAlignment(Element.ALIGN_CENTER);
 				document.add(title);
 				document.add(blankRow(30));
-
-				
+				//读入基本信息
+				ArrayList<Course> courses = student.getStudentCourses();
 				String name = student.getStudentName();
 				String email = student.getStudentEmail();
-				
-
-				/*for (Course course : courses) {
-					table.addCell(new Cell().add(new Paragraph(course.getCourseName())));
-					String score = String.valueOf(course.getCourseScore());
-					table.addCell(new Cell().add(new Paragraph(score)));
-				}*/
+				//String age = student.getAge();
+				//String gender = student.getGender();
 
 				// 基本信息
 				PdfPTable tbBaseInfo = new PdfPTable(2);
 				PdfPCell cell11 = new PdfPCell(new Paragraph(name, myfont(18, Font.NORMAL)));
 				cell11.setBorder(0);
-				cell11.setPaddingTop(5);
+				// cell11.setPaddingTop(5);
 				cell11.setPaddingBottom(10);
 				cell11.setPaddingLeft(15);
-
+				// 头像
+				String headImgPath = "/home/hcert.jpeg";
+				Image headImg = Image.getInstance(headImgPath);
 				// 设置每列宽度比例
-				int width11[] = { 85 , 15 };
+				int width11[] = { 15, 85 };
 				tbBaseInfo.setWidths(width11);
 				tbBaseInfo.getDefaultCell().setBorder(0);
+				PdfPCell cellHimg = new PdfPCell();
+				cellHimg.setBorder(0);
+				cellHimg.setImage(headImg);
+				cellHimg.setColspan(1);// 合并单元格
+				cellHimg.setRowspan(3);
+				tbBaseInfo.addCell(cellHimg);
 				tbBaseInfo.addCell(cell11);
-				// 占位单元格
-				PdfPCell cellpadding = new PdfPCell();
-				cellpadding.setBorder(0);
-				cellpadding.setColspan(1);// 合并单元格
-				cellpadding.setRowspan(3);
-				tbBaseInfo.addCell(cellpadding);
-				
 				PdfPCell cell12 = new PdfPCell(
-						new Paragraph("女" + splitVline + "18岁" + splitVline + " 大观园潇湘馆" + splitVline + "6年工作经验", myfont(
+						new Paragraph("女" + splitVline + "18岁"  + splitVline + "6年工作经验", myfont(
 								12, Font.NORMAL)));
+
+				/*PdfPCell cell12 = new PdfPCell(
+						new Paragraph(gender + splitVline + age + "years" + splitVline + "6年工作经验", myfont(
+								12, Font.NORMAL))); */
 				cell12.setPaddingBottom(5);
 				cell12.setPaddingLeft(15);
 				cell12.setBorder(0);
@@ -524,57 +506,36 @@ public class pdfProducer_v {
 				// 加入空行
 				document.add(blankRow(30));
 
-				document.add(add_headtitle_1("求职意向"));
-				// 加入空行
-				document.add(blankRow(5));
-				// 求职意向主体
-				PdfPTable careerTable = new PdfPTable(4);
-				// 配置单元格跨页显示
-				careerTable.setSplitLate(false);
-				careerTable.setSplitRows(true);
-
-				int careerTableWidth[] = { 15, 35, 15, 35 };
-				careerTable.setWidths(careerTableWidth);
-				careerTable.addCell(add_cell("求职状态：", "#878787", 10));
-				careerTable.addCell(add_cell("在职考虑换工作", 10));
-				careerTable.addCell(add_cell("工作地点：", "#878787", 10));
-				careerTable.addCell(add_cell("中国-义龙新区", 10));
-
-				careerTable.addCell(add_cell("期望行业：", "#878787", 10));
-				careerTable.addCell(add_cell("事业单位/计算机", 10));
-				careerTable.addCell(add_cell("期望职业：", "#878787", 10));
-				careerTable.addCell(add_cell("项目经理/运维开发/信息安全工程师/系统架构师", 10));
-
-				careerTable.addCell(add_cell("期望薪资：", "#878787", 10));
-				careerTable.addCell(add_cell("10k~15k", 10));
-				careerTable.addCell(add_cell("工作性质：", "#878787", 10));
-				careerTable.addCell(add_cell("全职", 10));
-				document.add(careerTable);
-				// 加入空行
-				document.add(blankRow());
-
-				// 工作经验
-				document.add(add_headtitle_1("工作经验"));
-				document.add(blankRow(5));
-				// 工作经验 主体 Begin
-				add_workExpTable(document);
-				add_workExpTable(document);
-				// 工作经验 主体 END
-
-				document.add(blankRow());
-
-				// 项目经验
-				document.add(add_headtitle_1("项目经验"));
-				document.add(blankRow(5));
-				add_projectExpTable(document);
-
-				document.add(blankRow());
 				// 教育经历
 				document.add(add_headtitle_1("教育经历"));
 				document.add(blankRow(5));
 				add_eduExpTable(document);
 
 				document.add(blankRow());
+				 
+				// 专业课成绩
+				document.add(add_headtitle_1("专业课成绩"));
+				document.add(blankRow(5));
+				// 专业课成绩 主体 Begin
+				// 全部显示
+				add_grades_all(document,courses);
+				/* 
+				// 只显示最高的k门成绩
+				int k = 
+				add_grades_part(document,courses, k);
+				 */
+
+				// 专业课成绩 主体 END
+
+				document.add(blankRow());
+			
+				// 项目经验
+				document.add(add_headtitle_1("项目经验"));
+				document.add(blankRow(5));
+				add_projectExpTable(document);
+
+				document.add(blankRow());
+				
 				// 培训经历
 				document.add(add_headtitle_1("培训经历"));
 				document.add(blankRow(5));
