@@ -1,15 +1,14 @@
 package Model;
-import java.awt.image.BufferedImage;
-import java.util.ArrayList;
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import javax.imageio.ImageIO;
-import java.awt.*;
+
 /**
- * @Author: Zongyou Yang
- * @Date: 2023-03-28-12:44
+ * @Author: Zhouhe Zhang
+ * @Date: 2023-03-19-12:44
  * @Description: entity class of student
  */
 public class Student {
@@ -18,9 +17,11 @@ public class Student {
     private ArrayList<Course> Stucourses;
     private String studentPassword;
     private String studentEmail;
-    private BufferedImage studentImage = setDefaultImage();
+  //  private BufferedImage studentImage = setDefaultImage();
     private String studentGender;
     private String studentPhone;
+
+
     private String studentCompetition;
     private String studentActiviy;
     private String studentAge;
@@ -35,10 +36,23 @@ public class Student {
         this.studentPassword = studentPassword;
         this.studentEmail = studentEmail;
     }
+    public Student(String studentID,  String studentPassword) {
+        this.studentID= studentID;
+        this.studentPassword = studentPassword;
+    }
 
     public Student(String studentName, int studentID, String studentPassword, String studentEmail) {
     }
 
+
+
+    public String getStudentActiviy() {
+        return studentActiviy;
+    }
+
+    public void setStudentActiviy(String studentActiviy) {
+        this.studentActiviy = studentActiviy;
+    }
     public String getStudentID() {
         return studentID;
     }
@@ -115,21 +129,22 @@ public class Student {
         this.studentCompetition = studentCompetition;
     }
 
-    public String getStudentActiviy() {
+    public String getStudentActivity() {
         return studentActiviy;
     }
 
-    public void setStudentActiviy(String studentActiviy) {
+    public void setStudentActivity(String studentActiviy) {
         this.studentActiviy = studentActiviy;
     }
 
-    public BufferedImage getStudentImage() {
-        return studentImage;
-    }
-
-    public void setStudentImage(BufferedImage studentImage) {
-        this.studentImage = studentImage;
-    }
+//    public BufferedImage getStudentImage() {
+//
+//        return studentImage;
+//    }
+//
+//    public void setStudentImage(BufferedImage studentImage) {
+//        this.studentImage = studentImage;
+//    }
 
     public double calculateAverageScore() {
         double totalScore = 0;
@@ -149,22 +164,38 @@ public class Student {
         return totalCredit;
     }
 
-    private BufferedImage setDefaultImage() {
-        BufferedImage image = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
-        Graphics g = image.getGraphics();
-        g.setColor(Color.GRAY);
-        g.fillRect(0, 0, 100, 100);
-        g.dispose();
-        return image;
-    }
-    public File saveImagetoFile(){
-        BufferedImage image = getStudentImage();
-        File file = new File("output.png");
-        try {
-            ImageIO.write(image, "png", file);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return file;
+//    private BufferedImage setDefaultImage() {
+//        BufferedImage image = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+//        Graphics g = image.getGraphics();
+//        g.setColor(Color.GRAY);
+//        g.fillRect(0, 0, 100, 100);
+//        g.dispose();
+//        return image;
+//    }
+//    public File saveImagetoFile(){
+//        BufferedImage image = getStudentImage();
+//        File file = new File("output.png");
+//        try {
+//            ImageIO.write(image, "png", file);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return file;
+//    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentID='" + studentID + '\'' +
+                ", studentName='" + studentName + '\'' +
+                ", Stucourses=" + Stucourses +
+                ", studentPassword='" + studentPassword + '\'' +
+                ", studentEmail='" + studentEmail + '\'' +
+                ", studentGender='" + studentGender + '\'' +
+                ", studentPhone='" + studentPhone + '\'' +
+                ", studentCompetition='" + studentCompetition + '\'' +
+                ", studentActiviy='" + studentActiviy + '\'' +
+                ", studentAge='" + studentAge + '\'' +
+                '}';
     }
 }
