@@ -98,6 +98,7 @@ public class menuPage extends JFrame {
     }
     public void changeToDispaly() throws IOException {
         this.setContentPane((new InfoReader()).readit(this));
+        this.setSize(1200, 850);
     }
     public void  changeToFocusLearning(){
         this.setContentPane(new FocusLearningJPanel(this));
@@ -107,6 +108,8 @@ public class menuPage extends JFrame {
         this.setLocationRelativeTo(null);
         this.setContentPane(layeredPane_Main);
     }
+
+
 
     public static void main(String[] args) throws InterruptedException {
         new menuPage();

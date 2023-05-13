@@ -5,10 +5,19 @@ import Model.Student;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartFrame;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.general.DefaultPieDataset;
 
 
 public class Display_Table_Panel extends JLayeredPane {
@@ -28,7 +37,7 @@ public class Display_Table_Panel extends JLayeredPane {
         panel.setLayout(new BorderLayout());
         panel.setBackground(new Color(255, 255, 204)); //设置背景颜色
 
-        panel.setSize(1000, 600);
+        panel.setSize(1200, 800);
         JButton goBackJButton = new JButton("Go Back");
         //goBackJButton.setBounds( 200,  50, 500, 30);
         goBackJButton.addActionListener(new AbstractAction() {
@@ -38,6 +47,35 @@ public class Display_Table_Panel extends JLayeredPane {
             }
         });
         //panel.add(goBackJButton,BorderLayout.NORTH);
+
+
+        JPanel pieChartPanel = new JPanel();
+        JButton visualizeButton = new JButton("Visual Analysis of Scores");
+        // add an action listener to the button to show the pie chart panel when clicked
+
+        DefaultPieDataset dataset = new DefaultPieDataset();
+
+        // Loop through the courses array list to get each course's score
+        for (Course course : courses) {
+            double score = course.getCourseScore();
+            String courseName = course.getCourseName();
+
+            // Add the score and course name to the dataset
+            dataset.setValue(courseName, score);
+        }
+
+        // Create a JFreeChart object using the dataset
+        JFreeChart chart = ChartFactory.createPieChart("Course Scores", dataset,false, true, true);
+
+        // Create a ChartPanel object using the chart
+        ChartPanel chartPanel = new ChartPanel(chart);
+
+        // Add the ChartPanel to the pieChartPanel
+        pieChartPanel.add(chartPanel);
+
+        // Set the pieChartPanel to visible
+        pieChartPanel.setVisible(true);
+
 
 
 
@@ -88,7 +126,7 @@ public class Display_Table_Panel extends JLayeredPane {
 
 
         // Create a panel to hold both components
-        JPanel tablePanel = new JPanel(new GridLayout(1, 2));
+        JPanel tablePanel = new JPanel(new GridLayout(2, 1));
         //JPanel tablePanel = new JPanel(new BorderLayout(10, 10));
         tablePanel.add(studentScrollPane);
         tablePanel.add(studentAvgPane);
@@ -99,14 +137,27 @@ public class Display_Table_Panel extends JLayeredPane {
         //panel.add(courseScrollPane, BorderLayout.CENTER);
 
 
+        JPanel buttonPanel = new JPanel(new GridLayout(1, 2));
+        buttonPanel.add(goBackJButton);
+        buttonPanel.add(visualizeButton);
+
+
         JPanel avgPanel =new JPanel(new BorderLayout());
         avgPanel.add(tablePanel, BorderLayout.CENTER);
-        avgPanel.add(goBackJButton,BorderLayout.SOUTH);
+        avgPanel.add(buttonPanel,BorderLayout.SOUTH);
         avgPanel.setOpaque(false);
+
+        pieChartPanel.setSize(300, 100); // Set the width and height to 300 pixels
+        //pieChartPanel.setLocation(800, 0); // Set the location of the pie chart panel
+
 
         panel.add(courseScrollPane, BorderLayout.NORTH);
         panel.add(avgPanel, BorderLayout.CENTER);
+        panel.add(pieChartPanel, BorderLayout.EAST);
 
+
+
+        pieChartPanel.setVisible(true);
 
         studentTable.setAutoCreateRowSorter(true);
         courseTable.setAutoCreateRowSorter(true);
@@ -123,7 +174,7 @@ public class Display_Table_Panel extends JLayeredPane {
         studentAvgTable.setRowHeight(30);
 
         panel.setOpaque(false);
-        panel.setBounds(0, 0, 1000,600);
+        panel.setBounds(0, 0, 1200,830);
         this.add(panel, (Integer)2);
         setVisible(true);
     }
