@@ -9,11 +9,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-/**
- * @Author: Zongyou Yang
- * @Date: 2023-03-28-12:44
- * @Description: entity class of student
- */
+
 
 public class Display_Table_Panel extends JLayeredPane {
 
@@ -32,15 +28,16 @@ public class Display_Table_Panel extends JLayeredPane {
         panel.setLayout(new BorderLayout());
         panel.setBackground(new Color(255, 255, 204)); //设置背景颜色
 
+        panel.setSize(1000, 600);
         JButton goBackJButton = new JButton("Go Back");
-        goBackJButton.setBounds( 200,  50, 100, 30);
+        //goBackJButton.setBounds( 200,  50, 500, 30);
         goBackJButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 clickGoBackJButton();
             }
         });
-        panel.add(goBackJButton,BorderLayout.NORTH);
+        //panel.add(goBackJButton,BorderLayout.NORTH);
 
 
 
@@ -54,7 +51,7 @@ public class Display_Table_Panel extends JLayeredPane {
         }
         studentTable = new JTable(studentModel);
         JScrollPane studentScrollPane = new JScrollPane(studentTable);
-        panel.add(studentScrollPane);
+        //panel.add(studentScrollPane, BorderLayout.WEST);
 
         // Create course table
         String[] courseColumnNames = { "ID", "Name", "Teacher", "Term", "Credit", "Score", "Description" };
@@ -67,10 +64,9 @@ public class Display_Table_Panel extends JLayeredPane {
         }
         courseTable = new JTable(courseModel);
         JScrollPane courseScrollPane = new JScrollPane(courseTable);
-        panel.add(courseScrollPane, BorderLayout.WEST);
+        //panel.add(courseScrollPane, BorderLayout.CENTER);
        // panel.setLayout(null);
-        panel.setOpaque(false);
-        panel.setBounds(0, 0, 800,600);
+
 
 
 
@@ -85,7 +81,32 @@ public class Display_Table_Panel extends JLayeredPane {
         }
         studentAvgTable = new JTable(AvgModel);
         JScrollPane studentAvgPane = new JScrollPane(studentAvgTable);
-        panel.add(studentAvgPane, BorderLayout.CENTER);
+
+
+
+
+
+
+        // Create a panel to hold both components
+        JPanel tablePanel = new JPanel(new GridLayout(1, 2));
+        //JPanel tablePanel = new JPanel(new BorderLayout(10, 10));
+        tablePanel.add(studentScrollPane);
+        tablePanel.add(studentAvgPane);
+
+        //panel.add(tablePanel, BorderLayout.CENTER);
+
+        //panel.add(studentScrollPane, BorderLayout.EAST);
+        //panel.add(courseScrollPane, BorderLayout.CENTER);
+
+
+        JPanel avgPanel =new JPanel(new BorderLayout());
+        avgPanel.add(tablePanel, BorderLayout.CENTER);
+        avgPanel.add(goBackJButton,BorderLayout.SOUTH);
+        avgPanel.setOpaque(false);
+
+        panel.add(courseScrollPane, BorderLayout.NORTH);
+        panel.add(avgPanel, BorderLayout.CENTER);
+
 
         studentTable.setAutoCreateRowSorter(true);
         courseTable.setAutoCreateRowSorter(true);
@@ -101,7 +122,8 @@ public class Display_Table_Panel extends JLayeredPane {
         studentAvgTable.setFont(new Font("Arial", Font.PLAIN, 16));
         studentAvgTable.setRowHeight(30);
 
-
+        panel.setOpaque(false);
+        panel.setBounds(0, 0, 1000,600);
         this.add(panel, (Integer)2);
         setVisible(true);
     }
