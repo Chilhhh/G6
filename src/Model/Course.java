@@ -1,41 +1,28 @@
 package Model;
 
-/**
- * @Author: Zhouhe Zhang
- * @Date: 2023-03-19-13:00
- * @Description: entity class of course
- */
+
 public class Course {
-    private Course course;
     private String courseName;
     private String courseTeacher;
     private int courseTerm;
     private int courseCredit;
     private int courseScore;
     private String courseDescribe;
-
+    private String courseID;
 
     public Course() {
     }
 
-    public Course(Course course, String courseName, String courseTeacher, int courseTerm, int courseCredit, int courseScore, String courseDescribe) {
-        this.course = course;
+    public Course(String courseID, String courseName, String courseTeacher, int courseTerm, int courseCredit, int courseScore, String courseDescribe) {
+
         this.courseName = courseName;
         this.courseTeacher = courseTeacher;
         this.courseTerm = courseTerm;
         this.courseCredit = courseCredit;
         this.courseScore = courseScore;
         this.courseDescribe = courseDescribe;
+        this.courseID=courseID;
     }
-
-    public Course getCourse() {
-        return course;
-    }
-
-    public void setCourse(Course course) {
-        this.course = course;
-    }
-
 
     public String getCourseName() {
         return courseName;
@@ -81,6 +68,13 @@ public class Course {
         return courseDescribe;
     }
 
+    public String getCourseID() {
+        return courseID;
+    }
+
+    public void setCourseID(String courseID){
+        this.courseID=courseID;
+    }
     public void setCourseDescribe(String courseDescribe) {
         this.courseDescribe = courseDescribe;
     }

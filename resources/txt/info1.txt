@@ -1,0 +1,233 @@
+Personal Transcript
+Student
+Name:ZhouheZhang
+StudentID:2020213299
+Password:12345678
+Mail:huanglei@502.com
+Gender:Female
+Age:20
+
+Course
+courseID: CS101
+CourseName: Introduction to Computer Science
+courseTeacher: Ting Mei
+courseTerm:1
+courseCredit:4
+courseScore:80
+courseDescribe: This course provides an introduction to the fundamentals of computer science, including algorithms, data structures, programming languages, and software development.
+
+Course
+courseID: MATH101
+CourseName: Calculus I
+courseTeacher: Matheew Tang
+courseTerm:5
+courseCredit:4
+courseScore:90
+courseDescribe: This course covers the basics of calculus, including limits, derivatives, and integrals.
+
+Course
+courseID: MATH102
+CourseName: Calculus II
+courseTeacher: Qinmeng Zou
+courseTerm:5
+courseCredit:4
+courseScore:90
+courseDescribe: This course covers advanced calculus topics such as techniques of integration, sequences, and series.
+
+Course
+courseID: ECE301
+CourseName: Digital Signal Processing
+courseTeacher: Tiankui Zhang
+courseTerm:5
+courseCredit:3
+courseScore:85
+courseDescribe: This course covers the principles and applications of digital signal processing, including Fourier transforms, digital filtering, and spectral analysis.
+
+Course
+courseID: CS401
+CourseName: Advanced Network Programming
+courseTeacher: John Smith
+courseTerm:5
+courseCredit:3
+courseScore:90
+courseDescribe: This course covers advanced topics in network programming, including socket programming, network security, and distributed systems.
+
+Course
+courseID: ENG101
+CourseName: Introduction to Literature
+courseTeacher: Sarah Lee
+courseTerm:2
+courseCredit:3
+courseScore:88
+courseDescribe: This course explores various forms of literature including fiction, poetry, and drama. Students will analyze literary texts and develop critical reading and writing skills.
+
+Course
+courseID: PSY101
+CourseName: Introduction to Psychology
+courseTeacher: David Kim
+courseTerm:2
+courseCredit:3
+courseScore:85
+courseDescribe: This course provides an introduction to the major theories and concepts in psychology, including perception, learning, cognition, personality, and social psychology.
+
+Course
+courseID: HIS201
+CourseName: Modern World History
+courseTeacher: Karen Chen
+courseTerm:3
+courseCredit:4
+courseScore:92
+courseDescribe: This course examines the major events, trends, and ideas that have shaped the modern world, from the Industrial Revolution to the present day.
+
+Course
+courseID: ART102
+CourseName: Introduction to Drawing
+courseTeacher: Emily Wong
+courseTerm:4
+courseCredit:2
+courseScore:87
+courseDescribe: This course introduces the fundamentals of drawing, including line, form, shading, and composition. Students will develop technical skills and learn to create expressive drawings.
+
+Course
+courseID: PHY301
+CourseName: Quantum Mechanics
+courseTeacher: Alex Chen
+courseTerm:6
+courseCredit:4
+courseScore:93
+courseDescribe: This course covers the principles of quantum mechanics, including wave-particle duality, superposition, and entanglement. Students will apply these concepts to the study of atomic and molecular systems.
+
+Course
+courseID: FIN201
+CourseName: Corporate Finance
+courseTeacher: Jason Lee
+courseTerm:3
+courseCredit:3
+courseScore:89
+courseDescribe: This course covers the principles of corporate finance, including financial analysis, capital budgeting, risk management, and financial markets.
+
+Course
+courseID: BIO101
+CourseName: Introduction to Biology
+courseTeacher: Lisa Wang
+courseTerm:2
+courseCredit:4
+courseScore:87
+courseDescribe: This course provides an introduction to the fundamentals of biology, including cell structure, genetics, evolution, and ecology.
+
+Course
+courseID: MKT301
+CourseName: Marketing Strategy
+courseTeacher: Linda Chen
+courseTerm:4
+courseCredit:3
+courseScore:91
+courseDescribe: This course covers the principles of marketing strategy, including market analysis, product development, pricing, promotion, and distribution.
+
+Course
+courseID: CHEM201
+CourseName: Organic Chemistry
+courseTeacher: James Park
+courseTerm:6
+courseCredit:4
+courseScore:90
+courseDescribe: This course covers the principles of organic chemistry, including the structure, properties, and reactions of organic compounds.
+
+Course
+courseID: SOC101
+CourseName: Introduction to Sociology
+courseTeacher: Rachel Kim
+courseTerm:2
+courseCredit:3
+courseScore:88
+courseDescribe: This course provides an introduction to the major theories and concepts in sociology, including social structure, culture, socialization, and social change.
+
+Course
+courseID: SPAN201
+CourseName: Intermediate Spanish
+courseTeacher: Maria Garcia
+courseTerm:3
+courseCredit:4
+courseScore:86
+courseDescribe: This course builds on basic Spanish language skills and focuses on improving reading, writing, speaking, and listening proficiency in the context of Hispanic cultures.
+
+Course
+courseID: MUS101
+CourseName: Music Appreciation
+courseTeacher: John Lee
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course explores the history and theory of Western music, with an emphasis on listening to and analyzing various musical styles.
+
+Course
+courseID: ECO301
+CourseName: Microeconomics
+courseTeacher: Andrew Kim
+courseTerm:4
+courseCredit:3
+courseScore:88
+courseDescribe: This course covers the principles of microeconomics, including supply and demand, consumer behavior, market structure, and government intervention.
+
+Course
+courseID: PHIL101
+CourseName: Introduction to Philosophy
+courseTeacher: Sarah Park
+courseTerm:2
+courseCredit:3
+courseScore:87
+courseDescribe: This course provides an introduction to the major theories and concepts in philosophy, including ethics, epistemology, metaphysics, and logic.
+
+Course
+courseID: ARTH201
+CourseName: Art History I
+courseTeacher: Emily Chen
+courseTerm:3
+courseCredit:4
+courseScore:91
+courseDescribe: This course explores the history of Western art from prehistoric times to the Renaissance, with a focus on major artistic movements and works.
+
+Course
+courseID: PSYCH101
+CourseName: Introduction to Psychology
+courseTeacher: David Lee
+courseTerm:2
+courseCredit:3
+courseScore:89
+courseDescribe: This course introduces students to the scientific study of behavior and mental processes, covering topics such as perception, learning, memory, emotion, personality, and psychological disorders.
+
+Course
+courseID: PHYS201
+CourseName: General Physics
+courseTeacher: Brian Park
+courseTerm:5
+courseCredit:4
+courseScore:92
+courseDescribe: This course covers the principles of classical mechanics, including motion, force, energy, momentum, and rotational dynamics.
+
+Course
+courseID: ENG101
+CourseName: College Writing
+courseTeacher: Emily Kim
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course is designed to develop students' skills in critical reading, writing, and research. Students will learn to analyze and respond to a variety of texts, and to produce clear, effective writing in a range of genres.
+
+Course
+courseID: HIST201
+CourseName: U.S. History to 1865
+courseTeacher: Michael Smith
+courseTerm:3
+courseCredit:4
+courseScore:87
+courseDescribe: This course covers the major events and themes in American history from pre-Columbian times to the end of the Civil War, with a focus on political, social, and economic developments.
+
+Course
+courseID: ECE301
+CourseName: Digital Circuit Design
+courseTeacher: Alex Kim
+courseTerm:6
+courseCredit:4
+courseScore:93
+courseDescribe: This course covers the principles of digital circuit design, including combinational and sequential logic, memory devices, and programmable logic devices. Students will learn to design and analyze digital circuits using software tools and hardware components.

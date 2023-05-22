@@ -1,0 +1,234 @@
+Personal Transcript
+Student
+Name: Liu Hong
+StudentID: 2020213033
+Password: liuhong9876
+Mail: liuhong@university.edu
+Gender: Female
+Age: 20
+
+Course
+courseID: MATH201
+CourseName: Linear Algebra
+courseTeacher: Xiaohui Liu
+courseTerm:2
+courseCredit:4
+courseScore:88
+courseDescribe: This course covers the basic concepts of linear algebra, including matrix operations, determinants, vector spaces, linear transformations, and eigenvalues.
+
+Course
+courseID: CS201
+CourseName: Data Structures and Algorithms
+courseTeacher: Hui Wang
+courseTerm:2
+courseCredit:4
+courseScore:85
+courseDescribe: This course focuses on data structures and algorithms, including linked lists, trees, graphs, sorting and searching algorithms, and complexity analysis.
+
+Course
+courseID: ECE301
+CourseName: Digital Communication Systems
+courseTeacher: Zhijun Cai
+courseTerm:6
+courseCredit:3
+courseScore:86
+courseDescribe: This course provides an introduction to digital communication systems, including modulation, channel coding, and error correction techniques.
+
+Course
+courseID: MATH301
+CourseName: Probability Theory
+courseTeacher: Hongwei Liu
+courseTerm:6
+courseCredit:3
+courseScore:90
+courseDescribe: This course covers the basic concepts of probability theory, including probability spaces, random variables, distributions, and statistical inference.
+
+Course
+courseID: CS401
+CourseName: Artificial Intelligence
+courseTeacher: Jun Zhang
+courseTerm:8
+courseCredit:4
+courseScore:89
+courseDescribe: This course introduces the fundamental concepts and techniques of artificial intelligence, including search algorithms, machine learning, and natural language processing.
+
+Course
+courseID: ECE401
+CourseName: Control Systems
+courseTeacher: Ming Li
+courseTerm:8
+courseCredit:4
+courseScore:87
+courseDescribe: This course covers the principles and applications of control systems, including feedback control, stability analysis, and frequency response.
+
+Course
+courseID: CS501
+CourseName: Computer Graphics
+courseTeacher: Liang Wu
+courseTerm:9
+courseCredit:3
+courseScore:88
+courseDescribe: This course covers the basic concepts and techniques of computer graphics, including 2D and 3D graphics, rendering, and animation.
+
+Course
+courseID: ECE501
+CourseName: Digital Image Processing
+courseTeacher: Xiaowei Zhang
+courseTerm:9
+courseCredit:4
+courseScore:85
+courseDescribe: This course provides an introduction to digital image processing, including image acquisition, enhancement, restoration, and compression.
+
+Course
+courseID: MATH401
+CourseName: Numerical Analysis
+courseTeacher: Wei Chen
+courseTerm:10
+courseCredit:4
+courseScore:87
+courseDescribe: This course covers the basic numerical methods for solving mathematical problems, including interpolation, differentiation, integration, and ordinary differential equations.
+
+Course
+courseID: CS601
+CourseName: Distributed Systems
+courseTeacher: Hua Xu
+courseTerm:12
+courseCredit:3
+courseScore:89
+courseDescribe: This course covers the principles and techniques of distributed systems, including communication protocols, distributed algorithms, and fault tolerance.
+
+Course
+courseID: ECE601
+CourseName: Wireless Communication Systems
+courseTeacher: Jing Li
+courseTerm:12
+courseCredit:4
+courseScore:88
+courseDescribe: This course provides an in-depth understanding of wireless communication systems, including modulation techniques, multiple access schemes, and cellular networks.
+
+Course
+courseID: CS701
+CourseName: Natural Language Processing
+courseTeacher: Yaqian Zhou
+courseTerm:13
+courseCredit:3
+courseScore:90
+courseDescribe: This course covers the fundamental concepts and techniques of natural language processing, including language models, syntactic and semantic analysis, and machine translation.
+
+Course
+courseID: MATH501
+CourseName: Real Analysis
+courseTeacher: Xiaofei Zhang
+courseTerm:14
+courseCredit:4
+courseScore:86
+courseDescribe: This course covers the theory of real analysis, including topology, convergence, differentiation, and integration.
+
+Course
+courseID: ECE701
+CourseName: Digital Signal Processing II
+courseTeacher: Guoxing Wang
+courseTerm:15
+courseCredit:4
+courseScore:85
+courseDescribe: This course is a continuation of Digital Signal Processing I, covering advanced topics such as filter design, spectral analysis, and adaptive signal processing.
+
+Course
+courseID: CS801
+CourseName: Computer Vision
+courseTeacher: Chenglong Zhang
+courseTerm:16
+courseCredit:3
+courseScore:87
+courseDescribe: This course covers the fundamental concepts and techniques of computer vision, including feature extraction, image segmentation, and object recognition.
+
+Course
+courseID: ECE801
+CourseName: Machine Learning
+courseTeacher: Shujie Zhao
+courseTerm:16
+courseCredit:4
+courseScore:89
+courseDescribe: This course provides a comprehensive introduction to machine learning, including regression, classification, clustering, and deep learning.
+
+Course
+courseID: CS901
+CourseName: Artificial Intelligence
+courseTeacher: Jiajun Bu
+courseTerm:17
+courseCredit:3
+courseScore:90
+courseDescribe: This course covers the fundamental concepts and techniques of artificial intelligence, including search algorithms, knowledge representation, and natural language processing.
+
+Course
+courseID: MATH601
+CourseName: Algebra
+courseTeacher: Junming Xu
+courseTerm:18
+courseCredit:4
+courseScore:86
+courseDescribe: This course covers the theory of algebra, including groups, rings, and fields, with applications to cryptography and coding theory.
+
+Course
+courseID: ECE901
+CourseName: Computer Networks
+courseTeacher: Kaiyuan Zhang
+courseTerm:19
+courseCredit:4
+courseScore:88
+courseDescribe: This course covers the principles and protocols of computer networks, including network architecture, routing algorithms, and transport protocols.
+
+Course
+courseID: CS1001
+CourseName: Data Science
+courseTeacher: Junhao Gan
+courseTerm:20
+courseCredit:3
+courseScore:89
+courseDescribe: This course covers the basic concepts and techniques of data science, including data preprocessing, visualization, statistical analysis, and machine learning.
+
+Course
+courseID: ECE1001
+CourseName: Internet of Things
+courseTeacher: Yilong Hao
+courseTerm:21
+courseCredit:4
+courseScore:87
+courseDescribe: This course covers the basics of the Internet of Things (IoT), including communication protocols, sensor networks, and IoT applications.
+
+Course
+courseID: CS1101
+CourseName: Operating Systems
+courseTeacher: Yuchong Hu
+courseTerm:22
+courseCredit:3
+courseScore:88
+courseDescribe: This course covers the fundamentals of operating systems, including process management, memory management, file systems, and device management.
+
+Course
+courseID: MATH701
+CourseName: Numerical Analysis
+courseTeacher: Wenbin Liu
+courseTerm:23
+courseCredit:4
+courseScore:85
+courseDescribe: This course covers the fundamental numerical methods for solving mathematical problems, including interpolation, integration, and differential equations.
+
+Course
+courseID: ECE1101
+CourseName: Wireless Sensor Networks
+courseTeacher: Jing Wang
+courseTerm:24
+courseCredit:4
+courseScore:89
+courseDescribe: This course provides an in-depth understanding of wireless sensor networks, including sensor nodes, communication protocols, and energy-efficient routing.
+
+Course
+courseID: CS1201
+CourseName: Computer Graphics
+courseTeacher: Xiaohua Huang
+courseTerm:25
+courseCredit:3
+courseScore:87
+courseDescribe: This course covers the basic concepts and techniques of computer graphics, including 2D and 3D graphics, rendering, and animation.
+

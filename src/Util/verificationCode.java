@@ -17,7 +17,7 @@ import javax.swing.JComponent;
  * @Description:
  */
 public class verificationCode extends JComponent implements MouseListener {
-    private String codes;  //自动生成的验证码
+    private String code;  //自动生成的验证码
 
     private int width, height = 40;  //设置验证码高度、宽度
 
@@ -30,7 +30,9 @@ public class verificationCode extends JComponent implements MouseListener {
         setPreferredSize(new Dimension(width, height));  //设置背景大小
         setSize(width, height);  //设置验证码长度和宽度
         this.addMouseListener(this);
-        setToolTipText("点击可更换验证码");
+        setToolTipText("Click to replace the verification code");
+        generateCode();
+        repaint();
     }
     //得到生成的验证码
     public int getCodesLength() {
@@ -49,7 +51,11 @@ public class verificationCode extends JComponent implements MouseListener {
     }
 
     public String getCode() {
-        return codes;
+     //generateCode();
+     //repaint();
+        System.out.println("b  "+code);
+     return code;
+
     }
 
 
@@ -75,16 +81,19 @@ public class verificationCode extends JComponent implements MouseListener {
                 codes[i] = (char) (random.nextInt(26) + 97);
             }
         }
-        this.codes = new String(codes);
-        return this.codes;
+        this.code = new String(codes);
+        System.out.println("1  "+ this.code);
+        return this.code;
+
     }
 
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        if(this.codes == null || this.codes.length() != this.codesLength) {  //判断生成的验证码是否为空或超出长度
-            this.codes = generateCode();
+        if(this.code == null || this.code.length() != this.codesLength) {  //判断生成的验证码是否为空或超出长度
+            this.code = generateCode();
+            System.out.println("2  "+ this.code);
         }
         width = this.codesLength * 16 + (this.codesLength - 1) * 10;
         super.setSize(width, height);  //接口使用，验证码字体大小
@@ -118,7 +127,7 @@ public class verificationCode extends JComponent implements MouseListener {
             int b = random.nextBoolean() ? 1 : -1;
             g2d.rotate(random.nextInt(10)*0.01*b);
             g2d.setColor(getRandColor(20, 130));
-            g2d.drawString(codes.charAt(i)+"", 16 * i + 10, base);
+            g2d.drawString(code.charAt(i)+"", 16 * i + 10, base);
         }
     }
 
