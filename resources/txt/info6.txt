@@ -1,0 +1,234 @@
+Personal Transcript
+Student
+Name: Zhang Wei
+StudentID: 2020213025
+Password: zhangwei2468
+Mail: zhangwei@university.edu
+Gender: Male
+Age: 21
+
+Course
+courseID: PSYC101
+CourseName: Introduction to Psychology
+courseTeacher: Dr. John Lee
+courseTerm:1
+courseCredit:4
+courseScore:92
+courseDescribe: This course provides an overview of the scientific study of behavior and mental processes, covering topics such as perception, cognition, learning, motivation, personality, and social psychology.
+
+Course
+courseID: BIOL201
+CourseName: Genetics
+courseTeacher: Prof. Sarah Johnson
+courseTerm:3
+courseCredit:4
+courseScore:87
+courseDescribe: This course introduces the principles of inheritance, gene expression, and genetic variation, and explores the applications of genetic research in areas such as medicine, agriculture, and biotechnology.
+
+Course
+courseID: HIST301
+CourseName: The Age of Revolution
+courseTeacher: Dr. James Smith
+courseTerm:5
+courseCredit:3
+courseScore:88
+courseDescribe: This course examines the political, social, and cultural transformations that occurred during the eighteenth and nineteenth centuries, including the American Revolution, the French Revolution, and the Industrial Revolution.
+
+Course
+courseID: CHEM301
+CourseName: Organic Chemistry
+courseTeacher: Prof. Lisa Chen
+courseTerm:4
+courseCredit:4
+courseScore:90
+courseDescribe: This course focuses on the properties and reactions of organic compounds, including their structures, bonding, and spectroscopic properties, and emphasizes the relationship between structure and function in biological systems.
+
+Course
+courseID: ARTS101
+CourseName: Introduction to Visual Arts
+courseTeacher: Prof. Mark Johnson
+courseTerm:1
+courseCredit:3
+courseScore:94
+courseDescribe: This course provides an introduction to the history, theory, and practice of visual arts, including painting, sculpture, architecture, and design, and encourages students to develop their own artistic skills and critical perspectives.
+
+Course
+courseID: ECON101
+CourseName: Principles of Microeconomics
+courseTeacher: Dr. Emily Wong
+courseTerm:2
+courseCredit:3
+courseScore:91
+courseDescribe: This course introduces the principles of microeconomics, including supply and demand, consumer behavior, production and cost, market structure, and government regulation.
+
+Course
+courseID: ENGL201
+CourseName: Shakespearean Literature
+courseTeacher: Prof. Michael Brown
+courseTerm:3
+courseCredit:3
+courseScore:89
+courseDescribe: This course explores the works of William Shakespeare, including his plays and sonnets, and examines their cultural and historical significance, as well as their literary techniques and themes.
+
+Course
+courseID: PHYS301
+CourseName: Quantum Mechanics
+courseTeacher: Dr. Lisa Chen
+courseTerm:5
+courseCredit:4
+courseScore:87
+courseDescribe: This course provides an introduction to quantum mechanics, including wave-particle duality, the uncertainty principle, quantum states, and quantum measurements, and explores the implications of quantum theory in areas such as cryptography and computing.
+
+Course
+courseID: POLS101
+CourseName: Introduction to Political Science
+courseTeacher: Prof. David Kim
+courseTerm:1
+courseCredit:3
+courseScore:92
+courseDescribe: This course provides an overview of political science, including the study of political institutions, political behavior, political ideologies, and public policy, and examines their relevance in contemporary politics.
+
+Course
+courseID: MATH301
+CourseName: Differential Equations
+courseTeacher: Dr. Jessica Liu
+courseTerm:4
+courseCredit:4
+courseScore:90
+courseDescribe: This course covers the theory and application of differential equations, including first-order equations, second-order equations, and systems of equations, and explores their applications in fields such as physics, engineering, and economics.
+
+Course
+courseID: PSYC201
+CourseName: Abnormal Psychology
+courseTeacher: Dr. Sarah Lee
+courseTerm:3
+courseCredit:3
+courseScore:88
+courseDescribe: This course examines abnormal behavior and psychological disorders, including their causes, symptoms, and treatments, and explores their impact on individuals and society.
+
+Course
+courseID: HIST101
+CourseName: World History to 1500
+courseTeacher: Prof. John Smith
+courseTerm:2
+courseCredit:3
+courseScore:93
+courseDescribe: This course surveys world history from prehistoric times to the year 1500, including the rise and fall of civilizations, the development of religions and philosophies, and the exchange of goods and ideas across cultures.
+
+Course
+courseID: ARTS101
+CourseName: Introduction to Art History
+courseTeacher: Prof. Jane Lee
+courseTerm:1
+courseCredit:3
+courseScore:89
+courseDescribe: This course provides an overview of the history of art, including different styles and movements throughout history, and explores how art reflects and shapes cultural values and beliefs.
+
+Course
+courseID: BIOL301
+CourseName: Genetics
+courseTeacher: Dr. James Lee
+courseTerm:4
+courseCredit:4
+courseScore:92
+courseDescribe: This course covers the principles of genetics, including inheritance, gene expression, DNA replication, and genetic engineering, and explores their applications in fields such as medicine, agriculture, and forensics.
+
+Course
+courseID: SOCI201
+CourseName: Race and Ethnicity
+courseTeacher: Prof. Maria Rodriguez
+courseTerm:3
+courseCredit:3
+courseScore:90
+courseDescribe: This course explores the social construction of race and ethnicity, and examines their impact on social structures, inequalities, and cultural identity.
+
+Course
+courseID: ENGL202
+CourseName: Shakespeare and His World
+courseTeacher: Prof. Emily Brown
+courseTerm:2
+courseCredit:3
+courseScore:91
+courseDescribe: This course examines the works of William Shakespeare in their historical and cultural context, exploring their themes, literary techniques, and influence on the development of English literature.
+
+Course
+courseID: ECON301
+CourseName: Macroeconomics
+courseTeacher: Dr. Andrew Kim
+courseTerm:4
+courseCredit:4
+courseScore:87
+courseDescribe: This course studies the principles of macroeconomics, including economic growth, inflation, monetary and fiscal policy, and international trade, and explores their applications in the global economy.
+
+Course
+courseID: PHIL101
+CourseName: Introduction to Philosophy
+courseTeacher: Prof. Michael Johnson
+courseTerm:1
+courseCredit:3
+courseScore:90
+courseDescribe: This course introduces the main areas of philosophy, including metaphysics, epistemology, ethics, and political philosophy, and explores the methods and techniques of philosophical inquiry.
+
+Course
+courseID: MATH401
+CourseName: Topology
+courseTeacher: Dr. Alice Chen
+courseTerm:5
+courseCredit:4
+courseScore:94
+courseDescribe: This course studies the fundamental concepts of topology, including continuity, connectedness, and compactness, and explores their applications in areas such as geometry, analysis, and physics.
+
+Course
+courseID: CHEM201
+CourseName: Organic Chemistry
+courseTeacher: Dr. Lisa Kim
+courseTerm:3
+courseCredit:4
+courseScore:88
+courseDescribe: This course covers the principles of organic chemistry, including the structure and properties of organic molecules, their reactions, and their applications in fields such as medicine, materials science, and energy.
+
+Course
+courseID: PSYC101
+CourseName: Introduction to Psychology
+courseTeacher: Prof. Sarah Lee
+courseTerm:1
+courseCredit:3
+courseScore:92
+courseDescribe: This course introduces the basic principles and methods of psychology, including perception, cognition, learning, motivation, personality, and social behavior, and explores their applications in various fields.
+
+Course
+courseID: HIST301
+CourseName: The Renaissance
+courseTeacher: Dr. James Park
+courseTerm:4
+courseCredit:3
+courseScore:89
+courseDescribe: This course examines the cultural, social, and political transformations of the Renaissance period, exploring its intellectual and artistic achievements, its impact on European history, and its legacy in modern society.
+
+Course
+courseID: PHYS401
+CourseName: Quantum Mechanics
+courseTeacher: Dr. David Chang
+courseTerm:5
+courseCredit:4
+courseScore:95
+courseDescribe: This course studies the principles of quantum mechanics, including wave-particle duality, uncertainty, superposition, and entanglement, and explores their applications in fields such as atomic and molecular physics, condensed matter physics, and quantum computing.
+
+Course
+courseID: BIOL201
+CourseName: Genetics
+courseTeacher: Dr. Lisa Kim
+courseTerm:3
+courseCredit:4
+courseScore:88
+courseDescribe: This course covers the principles of genetics, including the structure and function of DNA, gene expression, genetic variation, and inheritance, and explores their applications in fields such as medicine, agriculture, and biotechnology.
+
+Course
+courseID: ARTS101
+CourseName: Art History
+courseTeacher: Prof. Sophia Lee
+courseTerm:1
+courseCredit:3
+courseScore:91
+courseDescribe: This course surveys the major developments in art history, from ancient times to the present, examining the styles, techniques, and themes of various artists and movements, and exploring their cultural and historical contexts.
+

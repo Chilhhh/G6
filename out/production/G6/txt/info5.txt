@@ -1,0 +1,233 @@
+Personal Transcript
+Student
+Name: Wang Mei
+StudentID: 2020213010
+Password: wangmei5678
+Mail: wangmei@university.edu
+Gender: Female
+Age: 19
+
+Course
+courseID: HIST330
+CourseName: World War II
+courseTeacher: Dr. John Smith
+courseTerm:4
+courseCredit:3
+courseScore:88
+courseDescribe: This course examines the causes, events, and consequences of World War II, with a focus on the major powers involved, their strategies and tactics, and the impact of the war on global politics, society, and culture.
+
+Course
+courseID: MUSC110
+CourseName: Music Theory and Practice
+courseTeacher: Prof. Anna Lee
+courseTerm:1
+courseCredit:3
+courseScore:92
+courseDescribe: This course introduces the fundamentals of music theory, including notation, scales, chords, and harmony, as well as their practical applications in musical composition, analysis, and performance.
+
+Course
+courseID: ECON301
+CourseName: Microeconomics
+courseTeacher: Dr. James Kim
+courseTerm:3
+courseCredit:4
+courseScore:89
+courseDescribe: This course studies the behavior of individual consumers and firms in a market economy, analyzing the determination of prices, quantities, and market outcomes under different market structures and government policies.
+
+Course
+courseID: PHIL201
+CourseName: Introduction to Ethics
+courseTeacher: Prof. David Lee
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course explores the major ethical theories and their applications to contemporary moral issues, such as abortion, euthanasia, capital punishment, environmental ethics, and global justice.
+
+Course
+courseID: ENGL401
+CourseName: Advanced Writing
+courseTeacher: Prof. Susan Kim
+courseTerm:5
+courseCredit:3
+courseScore:93
+courseDescribe: This course develops advanced writing skills in a variety of genres, such as academic essays, research papers, creative writing, and professional communication, focusing on style, structure, organization, and rhetorical strategies.
+
+Course
+courseID: PSYC210
+CourseName: Developmental Psychology
+courseTeacher: Dr. Sarah Lee
+courseTerm:2
+courseCredit:4
+courseScore:87
+courseDescribe: This course examines the biological, cognitive, and socioemotional changes that occur throughout the lifespan, from infancy to old age, and the factors that influence individual differences in development.
+
+Course
+courseID: SOC325
+CourseName: Sociology of Gender
+courseTeacher: Prof. Linda Chen
+courseTerm:4
+courseCredit:3
+courseScore:91
+courseDescribe: This course investigates the social construction of gender, the dynamics of gender inequality, and the diversity of gender identities and expressions, drawing on sociological theories and empirical research.
+
+Course
+courseID: ARTS210
+CourseName: Drawing and Painting
+courseTeacher: Prof. John Lee
+courseTerm:2
+courseCredit:3
+courseScore:95
+courseDescribe: This course introduces the basic techniques and principles of drawing and painting, including line, shape, value, color, composition, and perspective, and provides opportunities for creative expression and artistic exploration.
+
+Course
+courseID: BIOL301
+CourseName: Cell Biology
+courseTeacher: Dr. Emily Kim
+courseTerm:3
+courseCredit:4
+courseScore:88
+courseDescribe: This course explores the structure, function, and regulation of cells, with a focus on the molecular and cellular mechanisms underlying fundamental processes such as gene expression, signal transduction, and cell cycle control.
+
+Course
+courseID: HUMS110
+CourseName: Introduction to Humanities
+courseTeacher: Prof. Michael Lee
+courseTerm:1
+courseCredit:3
+courseScore:90
+courseDescribe: This course surveys the major cultural and intellectual achievements of human civilizations, from ancient times to the present, in fields such as literature, philosophy, art, music, and religion.
+
+Course
+courseID: ECON302
+CourseName: Microeconomics
+courseTeacher: Prof. James Smith
+courseTerm:3
+courseCredit:4
+courseScore:89
+courseDescribe: This course examines the behavior of individual consumers, firms, and markets in a competitive economy, and the implications for resource allocation, efficiency, and welfare, using economic models and empirical evidence.
+
+Course
+courseID: MGMT410
+CourseName: Strategic Management
+courseTeacher: Dr. Sarah Davis
+courseTerm:5
+courseCredit:3
+courseScore:92
+courseDescribe: This course focuses on the process of formulating and implementing strategies for organizations in dynamic and uncertain environments, covering topics such as industry analysis, strategic planning, organizational design, and leadership.
+
+Course
+courseID: ENGL220
+CourseName: Shakespearean Drama
+courseTeacher: Prof. William Brown
+courseTerm:2
+courseCredit:3
+courseScore:94
+courseDescribe: This course studies selected plays by William Shakespeare, exploring their literary and cultural significance, their historical and political contexts, and their themes and motifs, through close reading, discussion, and critical analysis.
+
+Course
+courseID: PHYS201
+CourseName: Mechanics
+courseTeacher: Dr. Peter Chen
+courseTerm:3
+courseCredit:4
+courseScore:87
+courseDescribe: This course introduces the principles of classical mechanics, including kinematics, dynamics, energy, and momentum, and applies them to a range of physical systems, from particles and rigid bodies to fluids and oscillators.
+
+Course
+courseID: PHIL110
+CourseName: Introduction to Ethics
+courseTeacher: Prof. Jennifer Lee
+courseTerm:1
+courseCredit:3
+courseScore:91
+courseDescribe: This course introduces the main theories and approaches in ethical philosophy, including consequentialism, deontology, and virtue ethics, and applies them to contemporary ethical issues, such as abortion, euthanasia, and climate change.
+
+Course
+courseID: PSYCH350
+CourseName: Abnormal Psychology
+courseTeacher: Dr. Amanda Lee
+courseTerm:4
+courseCredit:3
+courseScore:88
+courseDescribe: This course examines the nature and treatment of psychological disorders, including their classification, etiology, symptoms, and therapies, and considers their social, cultural, and ethical dimensions.
+
+Course
+courseID: HIST210
+CourseName: The World since 1945
+courseTeacher: Prof. Michael Chen
+courseTerm:2
+courseCredit:3
+courseScore:92
+courseDescribe: This course surveys the major events and trends in global history since 1945, including decolonization, the Cold War, globalization, and the rise of new powers, and analyzes their political, economic, and cultural implications.
+
+Course
+courseID: ARTS101
+CourseName: Introduction to Drawing
+courseTeacher: Prof. Karen Brown
+courseTerm:1
+courseCredit:2
+courseScore:95
+courseDescribe: This course introduces the basic techniques and concepts of drawing, including line, shading, composition, and perspective, and allows students to develop their skills and creativity through a variety of exercises and projects.
+
+Course
+courseID: BIOL230
+CourseName: Human Anatomy and Physiology
+courseTeacher: Dr. Lisa Wang
+courseTerm:3
+courseCredit:4
+courseScore:86
+courseDescribe: This course provides an overview of the structure and function of the human body, covering topics such as the skeletal, muscular, circulatory, and nervous systems, and exploring their interactions and adaptations in health and disease.
+
+Course
+courseID: POLI450
+CourseName: International Relations
+courseTeacher: Dr. John Kim
+courseTerm:5
+courseCredit:3
+courseScore:93
+courseDescribe: This course analyzes the dynamics of international politics, including the causes and consequences of war, the role of international organizations and norms, and the challenges of global governance, using theoretical frameworks and empirical evidence.
+
+Course
+courseID: ENGL101
+CourseName: Introduction to Literature
+courseTeacher: Dr. Jane Smith
+courseTerm:1
+courseCredit:3
+courseScore:91
+courseDescribe: This course provides an overview of major literary genres, such as poetry, drama, and fiction, and introduces students to critical approaches and skills, including close reading, analysis, and interpretation.
+
+Course
+courseID: MUSC201
+CourseName: Music Theory and Practice
+courseTeacher: Prof. David Lee
+courseTerm:2
+courseCredit:3
+courseScore:88
+courseDescribe: This course explores the fundamental principles of music theory, including notation, rhythm, harmony, and form, and applies them to practical exercises and composition projects in a variety of styles.
+
+Course
+courseID: ECON301
+CourseName: Microeconomics
+courseTeacher: Dr. Sarah Brown
+courseTerm:3
+courseCredit:4
+courseScore:90
+courseDescribe: This course focuses on the behavior of individual consumers, firms, and markets, and examines how economic agents make decisions and interact in a range of contexts, such as pricing, production, and allocation of resources.
+
+Course
+courseID: PHIL200
+CourseName: Ethics and Society
+courseTeacher: Prof. Peter Chen
+courseTerm:2
+courseCredit:3
+courseScore:93
+courseDescribe: This course examines ethical issues and theories in the context of social and political life, including topics such as justice, rights, democracy, and diversity, and encourages students to reflect critically on their own values and beliefs.
+
+Course
+courseID: LANG300
+CourseName: Intermediate Spanish
+courseTeacher: Prof. Maria Rodriguez
+courseTerm:4
+courseCredit:3
+courseScore:89
+courseDescribe: This course builds on basic language skills to develop proficiency in reading, writing, listening, and speaking Spanish, and introduces cultural aspects of the Hispanic world, such as literature, art, and music.

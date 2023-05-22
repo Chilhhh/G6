@@ -1,0 +1,233 @@
+Personal Transcript
+Student
+Name: Sarah Lee
+StudentID: 2020213010
+Password: 1a2b3c4d
+Mail: sarahlee@university.edu
+Gender: Female
+Age: 19
+
+Course
+courseID: PSYC101
+CourseName: Introduction to Psychology
+courseTeacher: Dr. Susan Lee
+courseTerm:3
+courseCredit:4
+courseScore:92
+courseDescribe: This course provides an introduction to the basic concepts, theories, and methods in psychology, including sensation and perception, learning and memory, emotion, motivation, personality, social behavior, and abnormal psychology, with an emphasis on critical thinking and scientific inquiry.
+
+Course
+courseID: ENGL101
+CourseName: Introduction to Literature
+courseTeacher: Dr. Jennifer Kim
+courseTerm:3
+courseCredit:3
+courseScore:87
+courseDescribe: This course provides an introduction to the study of literature, including various genres such as fiction, poetry, drama, and non-fiction, with an emphasis on close reading, literary analysis, and cultural context.
+
+Course
+courseID: HIST101
+CourseName: World History I
+courseTeacher: Dr. Mark Johnson
+courseTerm:3
+courseCredit:4
+courseScore:89
+courseDescribe: This course provides an introduction to the history of the world from prehistoric times to the 16th century, with an emphasis on major civilizations, cultural interactions, and global trends.
+
+Course
+courseID: BIOL101
+CourseName: General Biology
+courseTeacher: Dr. Lisa Park
+courseTerm:3
+courseCredit:4
+courseScore:85
+courseDescribe: This course provides an introduction to the basic principles of biology, including cellular structure and function, genetics, evolution, ecology, and organismal diversity, with an emphasis on scientific inquiry and laboratory experimentation.
+
+Course
+courseID: ARTS101
+CourseName: Introduction to Visual Arts
+courseTeacher: Dr. David Kim
+courseTerm:3
+courseCredit:3
+courseScore:88
+courseDescribe: This course provides an introduction to the fundamentals of visual art, including various forms such as painting, sculpture, photography, and video, with an emphasis on critical analysis, aesthetics, and cultural context.
+
+Course
+courseID: ECON101
+CourseName: Introduction to Microeconomics
+courseTeacher: Dr. John Lee
+courseTerm:2
+courseCredit:3
+courseScore:91
+courseDescribe: This course provides an introduction to the basic principles of microeconomics, including supply and demand, consumer behavior, market structures, and welfare analysis, with an emphasis on analytical thinking and real-world applications.
+
+Course
+courseID: POLS101
+CourseName: Introduction to Political Science
+courseTeacher: Dr. Sarah Kim
+courseTerm:2
+courseCredit:4
+courseScore:87
+courseDescribe: This course provides an introduction to the basic concepts, theories, and methods in political science, including political institutions, political behavior, political economy, and global politics, with an emphasis on critical thinking and research skills.
+
+Course
+courseID: MATH201
+CourseName: Linear Algebra
+courseTeacher: Dr. Michael Chen
+courseTerm:4
+courseCredit:4
+courseScore:88
+courseDescribe: This course provides an introduction to the fundamental concepts and techniques of linear algebra, including systems of linear equations, matrix algebra, determinants, vector spaces, linear transformations, and eigenvalues, with an emphasis on applications in science and engineering.
+
+Course
+courseID: CHEM101
+CourseName: General Chemistry
+courseTeacher: Dr. Emily Kim
+courseTerm:4
+courseCredit:4
+courseScore:86
+courseDescribe: This course provides an introduction to the basic principles of chemistry, including atomic structure, chemical bonding, stoichiometry, thermodynamics, and kinetics, with an emphasis on laboratory experimentation and quantitative analysis.
+
+Course
+courseID: COMM101
+CourseName: Introduction to Communication Studies
+courseTeacher: Dr. Alex Lee
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course provides an introduction to the basic concepts, theories, and methods in communication studies, including interpersonal communication, mass communication, rhetorical analysis, and media effects, with an emphasis on critical thinking and effective communication skills.
+
+Course
+courseID: PSYC101
+CourseName: Introduction to Psychology
+courseTeacher: Dr. Jennifer Kim
+courseTerm:2
+courseCredit:3
+courseScore:92
+courseDescribe: This course provides an introduction to the basic concepts, theories, and methods in psychology, including perception, learning, memory, cognition, motivation, emotion, personality, and social behavior, with an emphasis on scientific inquiry and critical thinking.
+
+Course
+courseID: ARTS201
+CourseName: Art History
+courseTeacher: Dr. Elizabeth Wong
+courseTerm:3
+courseCredit:4
+courseScore:89
+courseDescribe: This course provides an introduction to the history of art, including major art movements and styles from prehistoric times to the present, with an emphasis on visual analysis, cultural context, and critical interpretation.
+
+Course
+courseID: PHIL101
+CourseName: Introduction to Philosophy
+courseTeacher: Dr. David Lee
+courseTerm:2
+courseCredit:3
+courseScore:93
+courseDescribe: This course provides an introduction to the basic concepts, theories, and methods in philosophy, including epistemology, metaphysics, ethics, logic, and political philosophy, with an emphasis on critical thinking and argumentation.
+
+Course
+courseID: BIOL101
+CourseName: Principles of Biology
+courseTeacher: Dr. Jane Kim
+courseTerm:4
+courseCredit:4
+courseScore:87
+courseDescribe: This course provides an introduction to the fundamental principles of biology, including cell structure and function, genetics, evolution, ecology, and physiology, with an emphasis on scientific inquiry and experimentation.
+
+Course
+courseID: SOC101
+CourseName: Introduction to Sociology
+courseTeacher: Dr. Sarah Park
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course provides an introduction to the basic concepts, theories, and methods in sociology, including social structure, culture, inequality, social change, and globalization, with an emphasis on critical thinking and empirical analysis.
+
+Course
+courseID: ECON201
+CourseName: Microeconomics
+courseTeacher: Dr. John Smith
+courseTerm:3
+courseCredit:4
+courseScore:88
+courseDescribe: This course provides an introduction to the principles of microeconomics, including supply and demand, consumer behavior, production and cost, market structure, and welfare analysis, with an emphasis on real-world applications and policy issues.
+
+Course
+courseID: HIST101
+CourseName: World History
+courseTeacher: Dr. Anna Lee
+courseTerm:4
+courseCredit:3
+courseScore:91
+courseDescribe: This course provides an overview of world history from ancient times to the present, including major events, personalities, and cultural developments, with an emphasis on critical interpretation and historical inquiry.
+
+Course
+courseID: COMM201
+CourseName: Public Speaking
+courseTeacher: Dr. Michael Chen
+courseTerm:2
+courseCredit:3
+courseScore:94
+courseDescribe: This course provides an introduction to the principles of effective public speaking, including audience analysis, speech preparation, delivery techniques, and persuasion strategies, with an emphasis on oral communication skills and self-confidence.
+
+Course
+courseID: ENGL101
+CourseName: Composition and Rhetoric
+courseTeacher: Dr. Emily Brown
+courseTerm:1
+courseCredit:4
+courseScore:93
+courseDescribe: This course provides an introduction to the principles of academic writing, including thesis development, evidence-based argumentation, rhetorical analysis, and revision techniques, with an emphasis on critical thinking and effective communication.
+
+Course
+courseID: CHEM101
+CourseName: General Chemistry
+courseTeacher: Dr. Kevin Lee
+courseTerm:5
+courseCredit:4
+courseScore:86
+courseDescribe: This course provides an introduction to the fundamental principles of chemistry, including atomic structure, chemical bonding, stoichiometry, thermodynamics, and equilibrium, with an emphasis on laboratory experimentation and problem-solving skills.
+
+Course
+courseID: PSYCH101
+CourseName: Introduction to Psychology
+courseTeacher: Dr. Sarah Kim
+courseTerm:1
+courseCredit:3
+courseScore:89
+courseDescribe: This course provides an overview of the major areas of psychology, including biological, cognitive, developmental, social, and abnormal psychology, with an emphasis on critical thinking and scientific inquiry.
+
+Course
+courseID: MATH301
+CourseName: Linear Algebra
+courseTeacher: Dr. Rachel Chen
+courseTerm:4
+courseCredit:4
+courseScore:92
+courseDescribe: This course covers the basics of linear algebra, including vectors, matrices, linear transformations, and eigenvalues/eigenvectors, with an emphasis on applications in engineering, computer science, and other fields.
+
+Course
+courseID: PHIL201
+CourseName: Ethics and Moral Reasoning
+courseTeacher: Dr. David Lee
+courseTerm:2
+courseCredit:3
+courseScore:91
+courseDescribe: This course provides an introduction to ethical theory and moral reasoning, with an emphasis on major philosophical perspectives and real-world issues such as justice, rights, and the environment.
+
+Course
+courseID: BIOL101
+CourseName: Introduction to Biology
+courseTeacher: Dr. Laura Smith
+courseTerm:1
+courseCredit:4
+courseScore:87
+courseDescribe: This course provides an overview of the principles of biology, including cell structure and function, genetics, evolution, ecology, and diversity of life, with an emphasis on scientific inquiry and critical thinking.
+
+Course
+courseID: ARTS101
+CourseName: Introduction to Art History
+courseTeacher: Dr. Maria Lopez
+courseTerm:3
+courseCredit:3
+courseScore:90
+courseDescribe: This course provides an overview of the history of art, including major styles, movements, and artists from ancient times to the present, with an emphasis on visual analysis and critical interpretation.

@@ -1,0 +1,233 @@
+Personal Transcript
+Student
+Name: John Smith
+StudentID: 2020213001
+Password: pass1234
+Mail: johnsmith@university.edu
+Gender: Male
+Age: 18
+
+Course
+courseID: BIO101
+CourseName: Introduction to Biology
+courseTeacher: Sarah Lee
+courseTerm:2
+courseCredit:4
+courseScore:85
+courseDescribe: This course provides an introduction to the principles of biology, including cell structure and function, genetics, evolution, and ecology.
+
+Course
+courseID: MKT301
+CourseName: Marketing Management
+courseTeacher: Mark Johnson
+courseTerm:4
+courseCredit:3
+courseScore:89
+courseDescribe: This course covers the principles and practices of marketing management, including market research, segmentation, targeting, branding, pricing, advertising, and sales promotion.
+
+Course
+courseID: LAW201
+CourseName: Introduction to Business Law
+courseTeacher: Jennifer Kim
+courseTerm:3
+courseCredit:4
+courseScore:88
+courseDescribe: This course provides an introduction to the legal environment of business, including contracts, torts, property, intellectual property, and business organizations.
+
+Course
+courseID: SOC101
+CourseName: Introduction to Sociology
+courseTeacher: Jason Park
+courseTerm:2
+courseCredit:3
+courseScore:87
+courseDescribe: This course introduces students to the scientific study of human social behavior, including socialization, culture, social inequality, deviance, and social change.
+
+Course
+courseID: ARTS101
+CourseName: Introduction to Visual Arts
+courseTeacher: Rachel Lee
+courseTerm:2
+courseCredit:3
+courseScore:91
+courseDescribe: This course provides an introduction to the principles and techniques of visual arts, including drawing, painting, sculpture, and printmaking, with an emphasis on art history and critical analysis.
+
+Course
+courseID: CHEM201
+CourseName: Organic Chemistry
+courseTeacher: Emily Kim
+courseTerm:5
+courseCredit:4
+courseScore:90
+courseDescribe: This course covers the principles of organic chemistry, including the structure, bonding, and reactivity of organic compounds, as well as reaction mechanisms and stereochemistry.
+
+Course
+courseID: ECON101
+CourseName: Principles of Microeconomics
+courseTeacher: David Lee
+courseTerm:2
+courseCredit:3
+courseScore:88
+courseDescribe: This course introduces students to the principles of microeconomics, including supply and demand, market structures, consumer behavior, and firm behavior.
+
+Course
+courseID: MUS101
+CourseName: Introduction to Music
+courseTeacher: John Kim
+courseTerm:2
+courseCredit:3
+courseScore:91
+courseDescribe: This course provides an introduction to the fundamentals of music, including music theory, notation, performance, and appreciation, with an emphasis on Western classical music.
+
+Course
+courseID: PHIL101
+CourseName: Introduction to Philosophy
+courseTeacher: Mark Johnson
+courseTerm:2
+courseCredit:3
+courseScore:89
+courseDescribe: This course introduces students to the major areas of philosophy, including metaphysics, epistemology, ethics, and logic, and encourages critical thinking and analysis.
+
+Course
+courseID: LANG101
+CourseName: Elementary Spanish
+courseTeacher: Maria Rodriguez
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course provides an introduction to the Spanish language and culture, covering basic vocabulary, grammar, and conversation skills, as well as cultural practices and perspectives.
+
+Course
+courseID: PSYC101
+CourseName: Introduction to Psychology
+courseTeacher: Jennifer Lee
+courseTerm:2
+courseCredit:3
+courseScore:87
+courseDescribe: This course provides an introduction to the scientific study of behavior and mental processes, covering topics such as learning, memory, perception, motivation, emotion, personality, and social psychology.
+
+Course
+courseID: PHYS101
+CourseName: Introduction to Physics
+courseTeacher: Andrew Kim
+courseTerm:2
+courseCredit:4
+courseScore:88
+courseDescribe: This course provides an introduction to the principles of physics, including mechanics, electricity, magnetism, waves, and optics, with an emphasis on problem-solving and laboratory experiments.
+
+Course
+courseID: HIST201
+CourseName: Modern World History
+courseTeacher: David Lee
+courseTerm:3
+courseCredit:3
+courseScore:86
+courseDescribe: This course covers the major events, trends, and ideas that have shaped the modern world since the 18th century, including political revolutions, industrialization, imperialism, nationalism, world wars, and globalization.
+
+Course
+courseID: ENGL101
+CourseName: College Writing
+courseTeacher: Rachel Kim
+courseTerm:2
+courseCredit:3
+courseScore:89
+courseDescribe: This course provides instruction and practice in college-level writing, including analysis, argumentation, research, and documentation, with an emphasis on critical thinking and effective communication.
+
+Course
+courseID: EDU101
+CourseName: Introduction to Education
+courseTeacher: Sarah Park
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course introduces students to the field of education, covering topics such as educational philosophy, history, psychology, sociology, and diversity, as well as practical aspects of teaching and learning.
+
+Course
+courseID: ART101
+CourseName: Introduction to Art
+courseTeacher: Julia Kim
+courseTerm:2
+courseCredit:3
+courseScore:88
+courseDescribe: This course provides an introduction to the basic principles and techniques of art, including drawing, painting, sculpture, and mixed media, as well as art history and criticism.
+
+Course
+courseID: BIOL101
+CourseName: Introduction to Biology
+courseTeacher: Jason Lee
+courseTerm:2
+courseCredit:4
+courseScore:87
+courseDescribe: This course provides an introduction to the principles of biology, including cell biology, genetics, evolution, ecology, and physiology, with an emphasis on scientific inquiry and laboratory experimentation.
+
+Course
+courseID: SOC101
+CourseName: Introduction to Sociology
+courseTeacher: Rachel Park
+courseTerm:2
+courseCredit:3
+courseScore:89
+courseDescribe: This course provides an introduction to the study of human social behavior, including culture, socialization, inequality, deviance, and social change, with an emphasis on critical analysis and social justice.
+
+Course
+courseID: STAT201
+CourseName: Introduction to Statistics
+courseTeacher: Daniel Kim
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course provides an introduction to statistical concepts and methods, including descriptive statistics, probability, hypothesis testing, correlation, regression, and sampling, with an emphasis on practical applications and data analysis.
+
+Course
+courseID: MKTG101
+CourseName: Principles of Marketing
+courseTeacher: Lisa Lee
+courseTerm:2
+courseCredit:3
+courseScore:88
+courseDescribe: This course provides an introduction to the principles and practices of marketing, including consumer behavior, market research, product development, pricing, promotion, and distribution, with an emphasis on ethical and sustainable marketing.
+
+Course
+courseID: ECON101
+CourseName: Principles of Microeconomics
+courseTeacher: John Kim
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course provides an introduction to the principles of microeconomics, including supply and demand, market equilibrium, consumer and producer behavior, pricing and output decisions, and market failure, with an emphasis on real-world applications and policy implications.
+
+Course
+courseID: POLI101
+CourseName: Introduction to Political Science
+courseTeacher: Sarah Lee
+courseTerm:2
+courseCredit:3
+courseScore:87
+courseDescribe: This course provides an introduction to the study of politics, including the nature and scope of political science, political ideologies and systems, political institutions and processes, and international relations, with an emphasis on critical thinking and informed citizenship.
+
+Course
+courseID: MUSC101
+CourseName: Introduction to Music
+courseTeacher: Eric Kim
+courseTerm:2
+courseCredit:3
+courseScore:89
+courseDescribe: This course provides an introduction to the basic elements of music, including rhythm, melody, harmony, form, and timbre, as well as music history and appreciation, with an emphasis on active listening and creative expression.
+
+Course
+courseID: CHEM101
+CourseName: Introduction to Chemistry
+courseTeacher: David Kim
+courseTerm:2
+courseCredit:4
+courseScore:88
+courseDescribe: This course provides an introduction to the principles of chemistry, including atomic structure, chemical bonding, reactions and stoichiometry, thermodynamics, and kinetics, with an emphasis on laboratory experimentation and problem-solving.
+
+Course
+courseID: LANG101
+CourseName: Elementary Language Studies
+courseTeacher: Sarah Kim
+courseTerm:2
+courseCredit:3
+courseScore:90
+courseDescribe: This course provides an introduction to the fundamentals of a chosen foreign language, including basic vocabulary, grammar, pronunciation, and culture, with an emphasis on practical communication and cross-cultural understanding.

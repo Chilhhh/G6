@@ -1,0 +1,233 @@
+Personal Transcript
+Student
+Name: Chen Peng
+StudentID: 2020213042
+Password: chenpeng0000
+Mail: chenpeng@university.edu
+Gender: Male
+Age: 18
+
+Course
+courseID: ECE1001
+CourseName: Internet of Things
+courseTeacher: Yilong Hao
+courseTerm:21
+courseCredit:4
+courseScore:87
+courseDescribe: This course covers the basics of the Internet of Things (IoT), including communication protocols, sensor networks, and IoT applications.
+
+Course
+courseID: CS1101
+CourseName: Operating Systems
+courseTeacher: Yuchong Hu
+courseTerm:22
+courseCredit:3
+courseScore:88
+courseDescribe: This course covers the fundamentals of operating systems, including process management, memory management, file systems, and device management.
+
+Course
+courseID: MATH701
+CourseName: Numerical Analysis
+courseTeacher: Wenbin Liu
+courseTerm:23
+courseCredit:4
+courseScore:85
+courseDescribe: This course covers the fundamental numerical methods for solving mathematical problems, including interpolation, integration, and differential equations.
+
+Course
+courseID: ECE1101
+CourseName: Wireless Sensor Networks
+courseTeacher: Jing Wang
+courseTerm:24
+courseCredit:4
+courseScore:89
+courseDescribe: This course provides an in-depth understanding of wireless sensor networks, including sensor nodes, communication protocols, and energy-efficient routing.
+
+Course
+courseID: CS1201
+CourseName: Computer Graphics
+courseTeacher: Xiaohua Huang
+courseTerm:25
+courseCredit:3
+courseScore:87
+courseDescribe: This course covers the basic concepts and techniques of computer graphics, including 2D and 3D graphics, rendering, and animation.
+
+Course
+courseID: ECE1201
+CourseName: Digital Image Processing
+courseTeacher: Qionghai Dai
+courseTerm:26
+courseCredit:4
+courseScore:88
+courseDescribe: This course provides an introduction to digital image processing, including image representation, filtering, segmentation, and feature extraction.
+
+Course
+courseID: CS1301
+CourseName: Database Systems
+courseTeacher: Junzhou Zhao
+courseTerm:27
+courseCredit:3
+courseScore:89
+courseDescribe: This course covers the principles and techniques of database systems, including relational databases, SQL, and data modeling.
+
+Course
+courseID: MATH801
+CourseName: Optimization
+courseTeacher: Zengxin Wei
+courseTerm:28
+courseCredit:4
+courseScore:86
+courseDescribe: This course covers the theory and methods of optimization, including linear programming, convex optimization, and nonlinear optimization.
+
+Course
+courseID: ECE1301
+CourseName: Digital Communications
+courseTeacher: Chenxi Zhu
+courseTerm:29
+courseCredit:4
+courseScore:87
+courseDescribe: This course provides an overview of digital communication systems, including modulation, channel coding, and signal processing.
+
+Course
+courseID: CS1401
+CourseName: Software Engineering
+courseTeacher: Xiangyu Zhang
+courseTerm:30
+courseCredit:3
+courseScore:88
+courseDescribe: This course covers the principles and practices of software engineering, including requirements analysis, design, testing, and project management.
+
+Course
+courseID: ECE1401
+CourseName: Power Electronics
+courseTeacher: Jianhui Wu
+courseTerm:31
+courseCredit:4
+courseScore:89
+courseDescribe: This course covers the design and analysis of power electronic systems, including power converters, motor drives, and renewable energy systems.
+
+Course
+courseID: CS1501
+CourseName: Machine Learning
+courseTeacher: Wei Liu
+courseTerm:32
+courseCredit:3
+courseScore:90
+courseDescribe: This course covers the theory and methods of machine learning, including supervised learning, unsupervised learning, and deep learning.
+
+Course
+courseID: MATH901
+CourseName: Real Analysis
+courseTeacher: Junfeng Li
+courseTerm:33
+courseCredit:4
+courseScore:88
+courseDescribe: This course covers the foundations of real analysis, including topology, continuity, differentiation, and integration.
+
+Course
+courseID: ECE1501
+CourseName: Control Systems
+courseTeacher: Zhenhua Xie
+courseTerm:34
+courseCredit:4
+courseScore:89
+courseDescribe: This course covers the principles and methods of control systems, including modeling, analysis, and design of feedback control systems.
+
+Course
+courseID: CS1601
+CourseName: Computer Networks
+courseTeacher: Wei Li
+courseTerm:35
+courseCredit:3
+courseScore:90
+courseDescribe: This course covers the principles and protocols of computer networks, including the OSI model, TCP/IP, routing, and congestion control.
+
+Course
+courseID: ECE1601
+CourseName: VLSI Design
+courseTeacher: Shaojun Wei
+courseTerm:36
+courseCredit:4
+courseScore:88
+courseDescribe: This course covers the design and implementation of digital and analog circuits using VLSI technology, including logic gates, memory circuits, and analog-to-digital converters.
+
+Course
+courseID: CS1701
+CourseName: Operating Systems
+courseTeacher: Yixuan Li
+courseTerm:37
+courseCredit:3
+courseScore:89
+courseDescribe: This course covers the principles and techniques of operating systems, including process management, memory management, file systems, and concurrency.
+
+Course
+courseID: MATH1001
+CourseName: Algebra
+courseTeacher: Xiaojun Chen
+courseTerm:38
+courseCredit:4
+courseScore:86
+courseDescribe: This course covers the fundamental concepts of algebra, including groups, rings, fields, and linear algebra.
+
+Course
+courseID: ECE1701
+CourseName: Microwave Engineering
+courseTeacher: Hui Wu
+courseTerm:39
+courseCredit:4
+courseScore:87
+courseDescribe: This course covers the principles and design of microwave circuits and systems, including waveguides, resonators, filters, and amplifiers.
+
+Course
+courseID: CS1801
+CourseName: Computer Graphics
+courseTeacher: Zhigang Deng
+courseTerm:40
+courseCredit:3
+courseScore:88
+courseDescribe: This course covers the theory and techniques of computer graphics, including raster graphics, vector graphics, and 3D modeling.
+
+Course
+courseID: ECE1801
+CourseName: Communications Systems
+courseTeacher: Wei Wang
+courseTerm:41
+courseCredit:4
+courseScore:89
+courseDescribe: This course covers the principles and techniques of communication systems, including modulation, demodulation, coding, and channel estimation.
+
+Course
+courseID: CS1901
+CourseName: Artificial Intelligence
+courseTeacher: Jingjing Wang
+courseTerm:42
+courseCredit:3
+courseScore:90
+courseDescribe: This course covers the principles and applications of artificial intelligence, including knowledge representation, reasoning, planning, and natural language processing.
+
+Course
+courseID: MATH1101
+CourseName: Probability and Statistics
+courseTeacher: Yang Liu
+courseTerm:43
+courseCredit:4
+courseScore:87
+courseDescribe: This course covers the basics of probability and statistics, including random variables, probability distributions, hypothesis testing, and regression analysis.
+
+Course
+courseID: ECE1901
+CourseName: Digital Signal Processing II
+courseTeacher: Yan Zhang
+courseTerm:44
+courseCredit:4
+courseScore:88
+courseDescribe: This course covers advanced topics in digital signal processing, including digital filter design, spectral analysis, and signal processing applications.
+
+Course
+courseID: CS2001
+CourseName: Database Systems
+courseTeacher: Chengkai Li
+courseTerm:45
+courseCredit:3
+courseScore:89
+courseDescribe: This course covers the principles and techniques of database systems, including data modeling, database design, query optimization, and transaction management.
